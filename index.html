@@ -6,13 +6,30 @@
     <title>Üdv az oldalunkon!</title>
     <style>
         p{color: rgb(175, 175, 175);}
-        .footerelem{min-width: 270px;
-        margin-left: 80px;
-        margin-right: 80px;}
+        .footerelem{
+        width: 25%;}
+        footer{background-color: black; 
+                color: white; 
+                position: fixed; 
+                bottom: 0; 
+                left: 0; 
+                display: flex; 
+                
+                justify-content: space-around;}
+        @media screen and (max-width:850px)
+        {
+            footer{flex-direction: column;
+                    height: 800px;
+                    text-align: center;}
+            .footerelem{width: 100%;
+                        margin: 0%; }
+            
+
+        }
     </style>
 </head>
 <body>
-    <footer style="background-color: black; color: white; position: fixed; bottom: 0; left: 0; display: flex; height: 200px;">
+    <footer>
         <div class="footerelem">
             <h3>Rólunk</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, eos rem libero facere ipsam nulla culpa placeat eius exercitationem omnis. Pariatur ex deserunt enim adipisci at doloribus, a nostrum quos.</p>
