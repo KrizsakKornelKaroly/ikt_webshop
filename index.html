@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üdv az oldalunkon!</title>
     <style>
-        p{color: rgb(175, 175, 175);}
+        .footerp{color: rgb(175, 175, 175);}
         .footerelem{
         width: 25%;}
         footer{background-color: black; 
@@ -19,33 +19,81 @@
         @media screen and (max-width:850px)
         {
             footer{flex-direction: column;
-                    height: 800px;
+                    
                     text-align: center;}
             .footerelem{width: 100%;
                         margin: 0%; }
             
 
         }
+        .kartya{width: 200px;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(243, 243, 243);
+            }
+        .kartyaszoveg{color: black;
+                    padding-left: 20px;}
+        main{
+            height: fit-content;
+        width: 100%;}
+
+        #kartyak{display: flex;
+            width: 100%;
+                flex-direction: row;
+                justify-content: space-around;}
     </style>
 </head>
 <body>
+<main>
+    <div id="kartyak">
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
+        </div>
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
+        </div>
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
+        </div>
+
+    
+        </div>
+    </div>
+
     <footer>
         <div class="footerelem">
             <h3>Rólunk</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, eos rem libero facere ipsam nulla culpa placeat eius exercitationem omnis. Pariatur ex deserunt enim adipisci at doloribus, a nostrum quos.</p>
+            <p class="footerp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, eos rem libero facere ipsam nulla culpa placeat eius exercitationem omnis. Pariatur ex deserunt enim adipisci at doloribus, a nostrum quos.</p>
         </div>
         <div class="footerelem">
             <h3>Contact us</h3>
-            <p>🗺️New York, US</p>
-            <p>✉️xxx@yyyyyyyy.com</p>
-            <p>📱+36 02 30 2000   </p>
+            <p class="footerp">🗺️New York, US</p>
+            <p class="footerp">✉️xxx@yyyyyyyy.com</p>
+            <p class="footerp">📱+36 02 30 2000   </p>
         </div>
         <div class="footerelem">
             <h3>Free shipping & Return</h3>
-            <p>Free shipping on all orders above 99$</p>
+            <p class="footerp">Free shipping on all orders above 99$</p>
             <h3>Money-back Guarantee</h3>
-            <p>100% money-back guarantee</p>
+            <p class="footerp">100% money-back guarantee</p>
         </div>
     </footer>
+</main>
 </body>
 </html>
