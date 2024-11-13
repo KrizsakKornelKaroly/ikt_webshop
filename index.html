@@ -10,21 +10,22 @@
         width: 25%;}
         footer{background-color: black; 
                 color: white; 
-                position: fixed; 
                 bottom: 0; 
                 left: 0; 
                 display: flex; 
-                
-                justify-content: space-around;}
-        @media screen and (max-width:850px)
+                justify-content: space-around;
+                bottom: 0;
+                position: absolute;
+                }
+        @media screen and (max-width:855px)
         {
+            
+            .kartyaksor{flex-direction:column;}
             footer{flex-direction: column;
-                    
                     text-align: center;}
             .footerelem{width: 100%;
                         margin: 0%; }
-            
-
+            #kartyak{width: 100%;}
         }
         .kartya{width: 200px;
                 height: fit-content;
@@ -35,18 +36,22 @@
         .kartyaszoveg{color: black;
                     padding-left: 20px;}
         main{
-            height: fit-content;
+        
         width: 100%;}
 
-        #kartyak{display: flex;
-            width: 100%;
+        .kartyaksor{display: flex;
                 flex-direction: row;
-                justify-content: space-around;}
+                justify-content: space-around;
+                margin-top: 20px;}
+        #kartyak{display: flex;
+                flex-direction: column;
+                width: 70%;}
     </style>
 </head>
 <body>
 <main>
-    <div id="kartyak">
+<div id="kartyak">
+    <div class="kartyaksor">
         <div class="kartya">
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
@@ -73,7 +78,35 @@
         </div>
 
     
+    </div>
+    <div class="kartyaksor">
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
         </div>
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
+        </div>
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                 <p style="color: red;"><b>$200.00</b></p>
+            </div>
+    
+        </div>
+
+    
+    </div>
     </div>
 
     <footer>
