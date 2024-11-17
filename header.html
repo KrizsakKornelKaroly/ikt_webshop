@@ -20,6 +20,11 @@
             padding-top: 2%;
             padding-bottom: 2%;
         }
+        .navJobb{
+            position: relative;
+            top: -10px;
+            
+        }
         body{
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -28,13 +33,39 @@
             background-color: white;
             border: none;
             font-size:medium;
+            cursor: pointer;
+            font-weight: bold;
         }
         .nyilacska{
+            position: relative;
             border: solid black;
             border-width: 0 2px 2px 0;
             display: inline-block;
             padding: 3px;
+            margin-left: 5px;
+            top: -3px;
             transform: rotate(45deg);
+        }
+        .menuOpen{
+            display: none;
+            color: rgb(255, 72, 82);
+        }
+        @media screen and (max-width: 800px) {
+            .navJobb{
+                display: none;
+            }
+            .menuOpen{
+                display: block;
+                position: absolute;
+                background-color: white;
+                font-size: xx-large;
+                border: none;
+                right: 5%;
+                top: 5%;
+            }
+            .menuOpen:hover{
+                border: 1px solid black;
+            }
         }
     </style>
 </head>
@@ -52,6 +83,9 @@
             </div>
             <p style="margin-top: 4px"><i>Ahol a honola szotyola</i></p>
         </div>
+        <button class="menuOpen">&#9776</button>
+
+        
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
         <a href="" class="rootNav">Home</a> / <a href="" class="rootNav">Products</a> / <a href="" class="rootNav">Casual</a> 
