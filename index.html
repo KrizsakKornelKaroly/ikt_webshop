@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üdv az oldalunkon!</title>
     <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
         .footerp{color: rgb(175, 175, 175);}
+        main{height: fit-content;
+            display:flex ;
+            flex-direction: row;}
         .footerelem{
         width: 25%;}
         footer{background-color: black; 
@@ -15,42 +19,62 @@
                 display: flex; 
                 justify-content: space-around;
                 bottom: 0;
-                position: absolute;
+                margin-top: 20px;
                 }
-        @media screen and (max-width:855px)
+
+                .kartya{width: 200px;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(243, 243, 243);
+                }
+            .kartyaszoveg{color: black;
+                        padding-left: 20px;}
+    
+    
+            .kartyaksor{display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 20px;}
+            #kartyak{display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 65%;
+                    margin-left: 50px;}
+            #szortolas{width: 34%;}
+        @media screen and (max-width:900px)
         {
             
-            .kartyaksor{flex-direction:column;}
+            .kartyaksor{width: 370px;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                        }
             footer{flex-direction: column;
                     text-align: center;}
             .footerelem{width: 100%;
                         margin: 0%; }
-            #kartyak{width: 100%;}
-        }
-        .kartya{width: 200px;
-                height: fit-content;
-                display: flex;
-                flex-direction: column;
-                background-color: rgb(243, 243, 243);
+            #kartyak{width: 100%;
+                justify-content: center;
             }
-        .kartyaszoveg{color: black;
-                    padding-left: 20px;}
-        main{
-        
-        width: 100%;}
+            main{width: 100%;
+                
+                justify-content: center;
+            text-align: center;}
+            .kartya{margin-bottom: 20px;
+            width: 300px;
+            justify-content: center;}
+            .kartyaszoveg{font-size: larger;}
 
-        .kartyaksor{display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin-top: 20px;}
-        #kartyak{display: flex;
-                flex-direction: column;
-                width: 70%;}
+        }
+
     </style>
 </head>
 <body>
+    
 <main>
 <div id="kartyak">
+    <h1>Casual</h1>
+    <hr width="95%">
     <div class="kartyaksor">
         <div class="kartya">
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
@@ -108,7 +132,10 @@
     
     </div>
     </div>
-
+    <div id="szortolas">
+        <h1>Filter by price</h1>
+    </div>
+</main>
     <footer>
         <div class="footerelem">
             <h3>Rólunk</h3>
@@ -127,6 +154,6 @@
             <p class="footerp">100% money-back guarantee</p>
         </div>
     </footer>
-</main>
+
 </body>
 </html>
