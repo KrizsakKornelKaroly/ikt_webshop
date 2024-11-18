@@ -42,6 +42,10 @@
                     width: 65%;
                     margin-left: 50px;}
             #szortolas{width: 34%;}
+            #kategoriak{line-height: 50px;}
+            .kategoriaelem{border-bottom: 0.5px dashed black;
+            padding-left: 10px;
+            margin-right: 50px;}
         @media screen and (max-width:900px)
         {
             
@@ -55,17 +59,25 @@
                         margin: 0%; }
             #kartyak{width: 100%;
                 justify-content: center;
+                margin-left: 0px;
             }
             main{width: 100%;
                 
                 justify-content: center;
-            text-align: center;}
+            text-align: center;
+            flex-direction: column;}
             .kartya{margin-bottom: 20px;
             width: 300px;
             justify-content: center;}
             .kartyaszoveg{font-size: larger;}
+            #szortolas{margin: auto;
+                        width: 400px;}
+            .kategoriaelem{margin-right: 0px;
+                            padding-left: 0px;}
+            
 
         }
+        
 
     </style>
 </head>
@@ -133,7 +145,16 @@
     </div>
     </div>
     <div id="szortolas">
-        <h1>Filter by price</h1>
+        <h2>Filter by price</h2>
+        <p>csuszkacuc</p>
+        <h2>Product categories</h2>
+        <ul id="kategoriak">
+            <li class="kategoriaelem"><h4>Accessories</h4></li>
+            <li class="kategoriaelem"><h4>Casual</h4></li>
+            <li class="kategoriaelem"><h4>Clothing</h4></li>
+            <li class="kategoriaelem"><h4>Men</h4></li>
+            <li class="kategoriaelem" style="border-bottom: none;"><h4>Women</h4></li>
+        </ul>
     </div>
 </main>
     <footer>
