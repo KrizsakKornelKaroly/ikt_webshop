@@ -61,13 +61,14 @@
                 font-size: xx-large;
                 border: none;
                 right: 5%;
-                top: 5%;
+                top: 3%;
             }
             .menuOpen:hover{
                 border: 1px solid black;
             }
         }
     </style>
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
     <nav style="padding-left: 10%; padding-right: 10%;">
@@ -75,8 +76,20 @@
         <div class="navBal" style="display: inline;">
             <p style="font-weight: bolder; font-size: x-large; margin-bottom: 0px;">Minta webáruház</p>
             <div class="navJobb" style="float: right; margin-top: 0;" >
+                
                 <a href="" class="navElemek">Home</a>
-                <button class="navElemek">Shop <i class="nyilacska"></i></button>
+
+                <div class="shopDD">
+                    <button class="shopDDgomb navElemek ">Shop <i class="nyilacska"></i></button>
+                    <div class="shopDDtartalom">
+                        <a href="" class="shopDDlinkek">Accessories</a>
+                        <a href="" class="shopDDlinkek">Casual</a>
+                        <a href="" class="shopDDlinkek">Clothing</a>
+                        <a href="" class="shopDDlinkek">Men</a>
+                        <a href="" class="shopDDlinkek">Women</a>
+                    </div>
+                    
+                </div>
                 <button class="navElemek">My account <i class="nyilacska"></i></button>
                 <a href="" class="navElemek">Blog</a>
                 <a href="" class="navElemek">Contact us</a>
@@ -90,5 +103,8 @@
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
         <a href="" class="rootNav">Home</a> / <a href="" class="rootNav">Products</a> / <a href="" class="rootNav">Casual</a> 
     </div>
+
+
+    <script src="header.html"></script>
 </body>
 </html>
