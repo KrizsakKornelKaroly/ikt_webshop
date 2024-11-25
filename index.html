@@ -18,7 +18,6 @@
                 left: 0; 
                 display: flex; 
                 justify-content: space-around;
-                bottom: 0;
                 margin-top: 20px;
                 }
 
@@ -42,10 +41,15 @@
                     width: 65%;
                     margin-left: 50px;}
             #szortolas{width: 34%;}
-            #kategoriak{line-height: 50px;}
+            #kategoriak{line-height: 10px;}
             .kategoriaelem{border-bottom: 0.5px dashed black;
             padding-left: 10px;
             margin-right: 50px;}
+            .elvalaszto {
+                width: 90%;
+                height: 2px;
+                background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
+}
         @media screen and (max-width:900px)
         {
             
@@ -146,8 +150,11 @@
     </div>
     <div id="szortolas">
         <h2>Filter by price</h2>
+
         <p>csuszkacuc</p>
-        <h2>Product categories</h2>
+        <h3>Product categories</h3>
+        <div class="elvalaszto"></div>
+
         <ul id="kategoriak">
             <li class="kategoriaelem"><h4>Accessories</h4></li>
             <li class="kategoriaelem"><h4>Casual</h4></li>
@@ -155,26 +162,30 @@
             <li class="kategoriaelem"><h4>Men</h4></li>
             <li class="kategoriaelem" style="border-bottom: none;"><h4>Women</h4></li>
         </ul>
+        
+        <h3 style="margin-top: 20px;">Top rated products:</h3>
+        <div class="elvalaszto"></div>
     </div>
 </main>
-    <footer>
-        <div class="footerelem">
-            <h3>Rólunk</h3>
-            <p class="footerp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, eos rem libero facere ipsam nulla culpa placeat eius exercitationem omnis. Pariatur ex deserunt enim adipisci at doloribus, a nostrum quos.</p>
-        </div>
-        <div class="footerelem">
-            <h3>Contact us</h3>
-            <p class="footerp">🗺️New York, US</p>
-            <p class="footerp">✉️xxx@yyyyyyyy.com</p>
-            <p class="footerp">📱+36 02 30 2000   </p>
-        </div>
-        <div class="footerelem">
-            <h3>Free shipping & Return</h3>
-            <p class="footerp">Free shipping on all orders above 99$</p>
-            <h3>Money-back Guarantee</h3>
-            <p class="footerp">100% money-back guarantee</p>
-        </div>
-    </footer>
+<footer>
+    <div class="footerelem">
+        <h3>Rólunk</h3>
+        <p class="footerp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, eos rem libero facere ipsam nulla culpa placeat eius exercitationem omnis. Pariatur ex deserunt enim adipisci at doloribus, a nostrum quos.</p>
+    </div>
+    <div class="footerelem">
+        <h3>Contact us</h3>
+        <p class="footerp">🗺️New York, US</p>
+        <p class="footerp">✉️xxx@yyyyyyyy.com</p>
+        <p class="footerp">📱+36 02 30 2000   </p>
+    </div>
+    <div class="footerelem">
+        <h3>Free shipping & Return</h3>
+        <p class="footerp">Free shipping on all orders above 99$</p>
+        <h3>Money-back Guarantee</h3>
+        <p class="footerp">100% money-back guarantee</p>
+    </div>
+</footer>
 
 </body>
+
 </html>
