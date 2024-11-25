@@ -9,6 +9,10 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    top: 19px
   }
   
   .shopDDlinkek{
@@ -21,4 +25,7 @@
 
   .shopDD:hover .shopDDtartalom {
     display: block;
+  }
+  .vonalacska{
+    border-bottom: 1px solid lightgray;
   }
