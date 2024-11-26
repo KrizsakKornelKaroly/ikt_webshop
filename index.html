@@ -45,11 +45,17 @@
             .kategoriaelem{border-bottom: 0.5px dashed black;
             padding-left: 10px;
             margin-right: 50px;}
+            .topelem{border-bottom: 0.5px dashed black;
+            padding-left: 10px;
+            margin-right: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;}
             .elvalaszto {
                 width: 90%;
                 height: 2px;
-                background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
-}
+                background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);}
+            .kover{font-weight: bold;}
         @media screen and (max-width:900px)
         {
             
@@ -89,14 +95,14 @@
     
 <main>
 <div id="kartyak">
-    <h1>Casual</h1>
+    <h2>Casual</h2>
     <hr width="95%">
     <div class="kartyaksor">
         <div class="kartya">
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -104,7 +110,7 @@
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -112,7 +118,7 @@
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -124,7 +130,7 @@
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -132,7 +138,7 @@
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -140,7 +146,7 @@
             <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
-                 <p style="color: red;"><b>$200.00</b></p>
+                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
             </div>
     
         </div>
@@ -165,6 +171,13 @@
         
         <h3 style="margin-top: 20px;">Top rated products:</h3>
         <div class="elvalaszto"></div>
+        <ul id="kategoriak">
+            <li class="topelem"><div class="toprszoveg"><p class="kover">Leather Jacket</p><p>$200</p></div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" style="width: 30px; height: 35px; padding-bottom: 15px; padding-top: 15px;"></li>
+            <li class="topelem"><div class="toprszoveg"><p class="kover">Leather Jacket</p><p>$200</p></div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" style="width: 30px; height: 35px; padding-bottom: 15px; padding-top: 15px;"></li>
+            <li class="topelem"><div class="toprszoveg"><p class="kover">Leather Jacket</p><p>$200</p></div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" style="width: 30px; height: 35px; padding-bottom: 15px; padding-top: 15px;"></li>
+            <li class="topelem"><div class="toprszoveg"><p class="kover">Leather Jacket</p><p>$200</p></div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" style="width: 30px; height: 35px; padding-bottom: 15px; padding-top: 15px;"></li>
+            <li class="topelem" style="border-bottom: none;"><div class="toprszoveg"><p class="kover">Leather Jacket</p><p>$200</p></div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" style="width: 30px; height: 35px; padding-bottom: 15px; padding-top: 15px;"></li>
+        </ul>
     </div>
 </main>
 <footer>
