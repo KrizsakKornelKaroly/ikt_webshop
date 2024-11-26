@@ -1,6 +1,6 @@
   .shopDD {
-    float: left;
     overflow: hidden;
+    float: left;
   }
   .shopDDtartalom {
     display: none;
@@ -28,4 +28,12 @@
   }
   .vonalacska{
     border-bottom: 1px solid lightgray;
+  }
+  .navJobb{
+      display: flex;
+      
+  }
+  .shopDDgomb, .accDDgomb{
+    position: relative;
+    top: -2px;
   }
