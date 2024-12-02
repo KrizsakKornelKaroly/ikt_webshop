@@ -131,7 +131,9 @@ body {
     display: block;
     background-color: rgb(255, 72, 82);
     color: white !important;
-    padding: 20px 10px;
+    padding: 20px 20px;
+    border-bottom: 1px solid white;
+    margin-left: 0px;
   }
   .shopDDgomb, .accDDgomb{
     display: block;
@@ -141,6 +143,12 @@ body {
   }
   .shopDDgomb,
   .accDDgomb {
-    top: 0px;
+    top: 0px; 
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .shopDD{
+    float: none;
   }
 }
