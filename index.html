@@ -74,15 +74,18 @@
         }
 
         #kartyak {
-            display: flex;
             flex-direction: column;
             justify-content: center;
             width: 65%;
-            margin-left: 50px;
+            margin-top: 0px;
+            align-content:flex-start;
         }
 
         #szortolas {
             width: 35%;
+            display: flex;
+            flex-direction: column;
+            
         }
 
         #kategoriak {
@@ -105,7 +108,7 @@
         }
 
         .elvalaszto {
-            width: 90%;
+            width: 97%;
             height: 2px;
             background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
         }
@@ -113,9 +116,7 @@
         {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            gap: 300px;
-
+            justify-content: space-between;
         }
 
         .kover {
@@ -214,13 +215,13 @@
         
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
-        <a href="" class="rootNav">Home</a> / <a href="" class="rootNav">Products</a> / <a href="" class="rootNav">Casual</a> 
+        <a href="" class="rootNav" style="margin-left: 0px;">Home</a> / <a href="" class="rootNav">Products</a> / <a href="" class="rootNav">Casual</a> 
     </div>
     <main>
         <div id="kartyak">
             <h2>Casual</h2>
             <div class="elvalaszto"></div>
-            <div class="legordulo">
+            <div class="legordulo" style="width: 97%;">
                 <p>Showing all 6 results</p>
                 <select name="" id="sortdropdown">
                     <option value="0">Default sorting</option>
