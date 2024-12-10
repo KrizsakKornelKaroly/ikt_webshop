@@ -32,8 +32,6 @@
         footer {
             background-color: black;
             color: white;
-            bottom: 0;
-            left: 0;
             display: flex;
             justify-content: space-around;
             margin-top: 20px;
@@ -45,6 +43,7 @@
             display: flex;
             flex-direction: column;
             background-color: rgb(243, 243, 243);
+            margin: 15px 0;
         }
         .kartya:hover
         {
@@ -69,8 +68,9 @@
         .kartyaksor {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            margin-top: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 96%;
         }
 
         #kartyak {
@@ -108,7 +108,7 @@
         }
 
         .elvalaszto {
-            width: 97%;
+            width: 96%;
             height: 2px;
             background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
         }
@@ -117,6 +117,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            color: darkgray;
         }
 
         .kover {
@@ -221,14 +222,14 @@
         <div id="kartyak">
             <h2>Casual</h2>
             <div class="elvalaszto"></div>
-            <div class="legordulo" style="width: 97%;">
+            <div class="legordulo" style="width: 96%;">
                 <p>Showing all 6 results</p>
                 <select name="" id="sortdropdown">
                     <option value="0">Default sorting</option>
                 </select>
             </div>
             <div class="kartyaksor">
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
+                <div tarolo style="width:200px; height:fit-content">
                     <div class="kartya">
                         <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
                         <div class="kartyaszoveg">
@@ -237,41 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
-                    <div class="kartya">
-                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
-                        <div class="kartyaszoveg">
-                            <p><b>Leather Jacket</b> </p>
-                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
-                    <div class="kartya">
-                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
-                        <div class="kartyaszoveg">
-                            <p><b>Leather Jacket</b> </p>
-                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
- 
-            <div class="kartyaksor">
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
-                    <div class="kartya">
-                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
-                        <div class="kartyaszoveg">
-                            <p><b>Leather Jacket</b> </p>
-                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
+                <div tarolo style="width:200px; height:fit-content">
                     <div class="kartya">
                         <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
                         <div class="kartyaszoveg">
@@ -282,7 +249,7 @@
                 </div>
                 
 
-                <div tarolo style="background-color: rgb(255, 72, 82); width:200px; height:fit-content">
+                <div tarolo style="width:200px; height:fit-content">
                     <div class="kartya">
                         <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
                         <div class="kartyaszoveg">
@@ -291,13 +258,40 @@
                         </div>
                     </div>
                 </div>
+                <div tarolo style="width:200px; height:fit-content">
+                    <div class="kartya">
+                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+                        <div class="kartyaszoveg">
+                            <p><b>Leather Jacket</b> </p>
+                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div tarolo style="width:200px; height:fit-content">
+                    <div class="kartya">
+                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+                        <div class="kartyaszoveg">
+                            <p><b>Leather Jacket</b> </p>
+                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+                        </div>
+                    </div>
+                </div>
+                
 
-
+                <div tarolo style="width:200px; height:fit-content">
+                    <div class="kartya">
+                        <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+                        <div class="kartyaszoveg">
+                            <p><b>Leather Jacket</b> </p>
+                            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="szortolas">
             <h2>Filter by price</h2>
-
+            <div class="elvalaszto"></div>
             <p>csuszkacuc</p>
             <h3>Product categories</h3>
             <div class="elvalaszto"></div>
