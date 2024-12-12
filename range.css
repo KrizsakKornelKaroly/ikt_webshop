@@ -1,65 +1,56 @@
-body {
-    padding: 4em;
-   }
- 
- input[type=range] {
-    box-sizing: border-box;
-    
-    
-    
-    width: 300px;
-    margin: 0;
-    padding: 0 2px;
-    /* Add some L/R padding to ensure box shadow of handle is shown */
-    overflow: hidden;
-    border: 0;
-    border-radius: 1px;
-    outline: none;
-    
-    /* Use a linear gradient to generate only the 2px height background */
-    background-size: 100% 2px;
-    pointer-events: none;
- 
-    &:active,
-    &:focus {
-       outline: none;
-    }
- 
-    &::-webkit-slider-thumb {
-       height: 15px;
-       width: 15px;
-       border-radius: 28px;
-       background-color: rgb(255,72,82);
-       position: relative;
-       margin: 5px 0;
-       /* Add some margin to ensure box shadow is shown */
-       cursor: pointer;
-       appearance: none;
-       pointer-events: all;
-       &::before {
-             content: ' ';
-             display: block;
-             position: absolute;
-             top: 13px;
-             left: 100%;
-             width: 2000px;
-             height: 2px;
-       }
-    }
- }
- 
- .multi-range {
-    position: relative;
-    height: 50px;
- 
-    input[type=range] {
-        position: absolute;
-        
-  
-        &:nth-child(2) {
-           background: none;
-  
 
-        }
-     }
- }
+
+  .slider-container {
+    position: relative;
+    width: 400px;
+  }
+
+  .slider-track {
+    position: absolute;
+    height: 8px;
+    background: #622245;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .slider-range {
+    position: absolute;
+    height: 8px;
+    background: #f04b4b;
+    border-radius: 4px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    background: #f04b4b;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #f04b4b;
+    border-radius: 50%;
+    cursor: pointer;
+  }

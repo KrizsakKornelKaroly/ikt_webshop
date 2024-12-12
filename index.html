@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üdv az oldalunkon!</title>
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="range.css">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +31,7 @@
         }
 
         footer {
-            background-color: black;
+            background-color: #100e1c;
             color: white;
             display: flex;
             justify-content: space-around;
@@ -132,6 +133,13 @@
         #sortdropdown{height: 30px;
                     margin-top: 10px;
                     }
+        #slideradatok{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: center;
+        }
 
         @media screen and (max-width:900px) {
 
@@ -298,7 +306,16 @@
         <div id="szortolas">
             <h2>Filter by price</h2>
             <div class="elvalaszto"></div>
-            <p>csuszkacuc</p>
+              <div class="slider-container" style="margin-top:20px">
+                <div class="slider-track"></div>
+                <div class="slider-range" id="range"></div>
+                <input type="range" id="rangeMin" min="0" max="100" value="25">
+                <input type="range" id="rangeMax" min="0" max="100" value="75">
+                </div>
+            <div id="slideradatok">
+                <button style="border: none; width:80px;height:30px; background-color:#dcdcdc">FILTER</button>
+                <p>Price:$17-$100</p>
+            </div>
             <h3>Product categories</h3>
             <div class="elvalaszto"></div>
 
@@ -385,7 +402,7 @@
             <p class="footerp">100% money-back guarantee</p>
         </div>
     </footer>
-
+    <script src="./range.js"></script>
 </body>
 
 </html>

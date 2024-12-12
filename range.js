@@ -1,32 +1,28 @@
-var lowerSlider = document.querySelector('#lower'),
-   upperSlider = document.querySelector('#upper'),
-   lowerVal = parseInt(lowerSlider.value);
-   upperVal = parseInt(upperSlider.value);
 
-upperSlider.oninput = function() {
-   lowerVal = parseInt(lowerSlider.value);
-   upperVal = parseInt(upperSlider.value);
-   
-   if (upperVal < lowerVal + 4) {
-      lowerSlider.value = upperVal - 4;
-      
-      if (lowerVal == lowerSlider.min) {
-         upperSlider.value = 4;
+    const rangeMin = document.getElementById('rangeMin');
+    const rangeMax = document.getElementById('rangeMax');
+    const range = document.getElementById('range');
+
+    function updateRange() {
+      const min = parseInt(rangeMin.value);
+      const max = parseInt(rangeMax.value);
+
+      if (min > max - 1) {
+        rangeMin.value = max - 1;
       }
-   }
-};
-
-
-lowerSlider.oninput = function() {
-   lowerVal = parseInt(lowerSlider.value);
-   upperVal = parseInt(upperSlider.value);
-   
-   if (lowerVal > upperVal - 4) {
-      upperSlider.value = lowerVal + 4;
-      
-      if (upperVal == upperSlider.max) {
-         lowerSlider.value = parseInt(upperSlider.max) - 4;
+      if (max < min + 1) {
+        rangeMax.value = min + 1;
       }
 
-   }
-};
+      const percentMin = (rangeMin.value / rangeMin.max) * 100;
+      const percentMax = (rangeMax.value / rangeMax.max) * 100;
+
+      range.style.left = percentMin + '%';
+      range.style.width = (percentMax - percentMin) + '%';
+    }
+
+    rangeMin.addEventListener('input', updateRange);
+    rangeMax.addEventListener('input', updateRange);
+
+    updateRange();
+  
