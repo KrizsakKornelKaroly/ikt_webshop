@@ -4,10 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dual Range Slider</title>
+<style>
+            .kartya {
+            width: 200px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(243, 243, 243);
+            margin: 15px 0;
+        }
+        .kartyakep:hover
+        {
+            animation-name: hover;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+
+        }
+        @keyframes hover
+        {
+            0%{opacity: 1;}
+            100%{opacity: 0.4;}
+        }
+
+        .kartyaszoveg {
+            color: black;
+            padding-left: 20px;
+        }
+
+
+        .kartyaksor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 96%;
+        }
+
+        #kartyak {
+            flex-direction: column;
+            justify-content: center;
+            width: 65%;
+            margin-top: 0px;
+            align-content:flex-start;
+        }
+        .kartyakep{ width: 200px;
+            height: fit-content;}
+        .keptarto
+        {
+            background-color: rgb(255, 106,114);
+            height: 200px;
+
+        }
+        .kosargomb{
+            position: absolute;
+            left: 65px;
+            top: 100px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+            
+
+        }
+
+            
+            
+
+        
+
+</style>
 </head>
 <body>
 
-
+    
+        <div class="kartya">
+            <div class="keptarto">
+                <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" class="kartyakep">
+                <button class="kosargomb">Add to cart</button>
+            </div>
+            
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+            </div>
+        </div>
+    
   
 </body>
 </html>
