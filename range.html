@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dual Range Slider</title>
-<style>
-            .kartya {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Range Slider</title>
+    <style>
+        .kartya {
             width: 200px;
             height: fit-content;
             display: flex;
@@ -13,18 +14,23 @@
             background-color: rgb(243, 243, 243);
             margin: 15px 0;
         }
-        .kartyakep:hover
-        {
+
+        .kartyakep:hover, .kosargomb:focus-visible {
             animation-name: hover;
             animation-duration: 1s;
             animation-fill-mode: forwards;
-            
+
 
         }
-        @keyframes hover
-        {
-            0%{opacity: 1;}
-            100%{opacity: 0.4;}
+
+        @keyframes hover {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.4;
+            }
         }
 
         .kartyaszoveg {
@@ -46,17 +52,26 @@
             justify-content: center;
             width: 65%;
             margin-top: 0px;
-            align-content:flex-start;
+            align-content: flex-start;
         }
-        .kartyakep{ width: 200px;
-            height: fit-content;}
-        .keptarto
-        {
-            background-color: rgb(255, 106,114);
+
+        .kartyakep {
+            width: 200px;
+            height: fit-content;
+        }
+
+        .keptarto {
+            background-color: rgb(255, 106, 114);
             height: 200px;
 
         }
-        .kosargomb{
+
+        .keptarto:hover>.kosargomb {
+            visibility: visible;
+
+        }
+
+        .kosargomb {
             position: absolute;
             left: 65px;
             top: 100px;
@@ -65,33 +80,29 @@
             color: white;
             padding: 10px;
             cursor: pointer;
-            display: none;
-            
-
+            visibility: hidden;
         }
 
-            
-            
-
-        
-
-</style>
+    </style>
 </head>
+
 <body>
 
-    
-        <div class="kartya">
-            <div class="keptarto">
-                <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" class="kartyakep">
-                <button class="kosargomb">Add to cart</button>
-            </div>
+
+    <div class="kartya">
+        <div class="keptarto">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" class="kartyakep">
             
-            <div class="kartyaszoveg">
-                <p><b>Leather Jacket</b> </p>
-                <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
-            </div>
         </div>
-    
-  
+        <div class="gomb"><button class="kosargomb">Add to cart</button></div>
+
+        <div class="kartyaszoveg">
+            <p><b>Leather Jacket</b> </p>
+            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
