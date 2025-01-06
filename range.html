@@ -15,23 +15,6 @@
             margin: 15px 0;
         }
 
-        .kartyakep:hover, .kosargomb:focus-visible {
-            animation-name: hover;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-
-
-        }
-
-        @keyframes hover {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.4;
-            }
-        }
 
         .kartyaszoveg {
             color: black;
@@ -55,34 +38,49 @@
             align-content: flex-start;
         }
 
-        .kartyakep {
-            width: 200px;
-            height: fit-content;
-        }
+
 
         .keptarto {
             background-color: rgb(255, 106, 114);
             height: 200px;
+            background-image: url(./Kepek/leatherJacket.jpeg);
+            background-size: contain;
 
         }
-
-        .keptarto:hover>.kosargomb {
-            visibility: visible;
+        .keptarto:hover
+        {
+            animation-name: hover;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
 
         }
 
         .kosargomb {
             position: absolute;
-            left: 65px;
-            top: 100px;
             border: 1px solid white;
             background-color: transparent;
             color: white;
             padding: 10px;
             cursor: pointer;
-            visibility: hidden;
+            margin-left: 60px;
+            margin-top: 80px;
         }
 
+        .hatterszin
+        {
+            background-color:rgb(255, 72, 82) ;
+        }
+
+
+        @keyframes hover {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.4;
+            }
+        }
     </style>
 </head>
 
@@ -90,12 +88,15 @@
 
 
     <div class="kartya">
-        <div class="keptarto">
-            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" class="kartyakep">
-            
-        </div>
-        <div class="gomb"><button class="kosargomb">Add to cart</button></div>
+        
 
+        
+        <div class="hatterszin">
+        <div class="keptarto">
+            
+            <button class="kosargomb">Add to cart</button>
+        </div>
+    </div>
         <div class="kartyaszoveg">
             <p><b>Leather Jacket</b> </p>
             <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
