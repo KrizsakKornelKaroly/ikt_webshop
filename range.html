@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dual Range Slider</title>
     <style>
-        .kartya {
+                .kartya {
             width: 200px;
             height: fit-content;
             display: flex;
@@ -14,94 +14,39 @@
             background-color: rgb(243, 243, 243);
             margin: 15px 0;
         }
+        .kartya:hover
+        {
+            animation-name: hover;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
 
+        }
+        @keyframes hover
+        {
+            0%{opacity: 1;}
+            100%{opacity: 0.3;}
+        }
 
         .kartyaszoveg {
             color: black;
             padding-left: 20px;
         }
-
-
-        .kartyaksor {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 96%;
-        }
-
-        #kartyak {
-            flex-direction: column;
-            justify-content: center;
-            width: 65%;
-            margin-top: 0px;
-            align-content: flex-start;
-        }
-
-
-
-        .keptarto {
-            background-color: rgb(255, 106, 114);
-            height: 200px;
-            background-image: url(./Kepek/leatherJacket.jpeg);
-            background-size: contain;
-
-        }
-        .keptarto:hover
-        {
-            animation-name: hover;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-
-        }
-
-        .kosargomb {
-            position: absolute;
-            border: 1px solid white;
-            background-color: transparent;
-            color: white;
-            padding: 10px;
-            cursor: pointer;
-            margin-left: 60px;
-            margin-top: 80px;
-        }
-
-        .hatterszin
-        {
-            background-color:rgb(255, 72, 82) ;
-        }
-
-
-        @keyframes hover {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.4;
-            }
-        }
     </style>
 </head>
 
 <body>
-
-
-    <div class="kartya">
-        
-
-        
-        <div class="hatterszin">
-        <div class="keptarto">
-            
-            <button class="kosargomb">Add to cart</button>
+    <div tarolo style="width:200px; height:fit-content">
+        <div class="kartya">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <div class="kartyaszoveg">
+                <p><b>Leather Jacket</b> </p>
+                <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
+            </div>
         </div>
     </div>
-        <div class="kartyaszoveg">
-            <p><b>Leather Jacket</b> </p>
-            <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
-        </div>
-    </div>
+    
+
 
 
 </body>
