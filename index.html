@@ -27,15 +27,17 @@
         }
 
         .footerelem {
-            width: 25%;
+            width: 30%;
         }
 
         footer {
             background-color: #100e1c;
             color: white;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-top: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
         }
 
         .kartya {
@@ -105,13 +107,16 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 96%;
+            width: 100%;
         }
 
         .elvalaszto {
-            width: 96%;
+            width: 100%;
             height: 2px;
             background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
+        }
+        #elvalasztoBal{
+            width: 96%;
         }
         .legordulo
         {
@@ -125,7 +130,7 @@
             font-weight: bold;
         }
         hr{
-            width: 95.5%;
+            width: 100%;
             color: white !important;
             border-top: 1.5px dashed lightgray;
             border-bottom: none;
@@ -140,6 +145,10 @@
             justify-content: space-between;
             margin-top: 20px;
             align-items: center;
+        }
+        input[type="range"]{
+            position: absolute;
+            top: -5px;
         }
 
         @media screen and (max-width:900px) {
@@ -236,7 +245,7 @@
     <main>
         <div id="kartyak">
             <h2>Casual</h2>
-            <div class="elvalaszto"></div>
+            <div class="elvalaszto" id="elvalasztoBal"></div>
             <div class="legordulo" style="width: 96%;">
                 <p>Showing all 6 results</p>
                 <select name="" id="sortdropdown">
@@ -307,13 +316,13 @@
         <div id="szortolas">
             <h2>Filter by price</h2>
             <div class="elvalaszto"></div>
-              <div class="slider-container" style="margin-top:20px">
+              <div class="slider-container" style="margin-top:20px;width: 100%;">
                 <div class="slider-track"></div>
                 <div class="slider-range" id="range"></div>
                 <input type="range" id="rangeMin" min="0" max="100" value="25">
                 <input type="range" id="rangeMax" min="0" max="100" value="75">
                 </div>
-            <div id="slideradatok">
+            <div id="slideradatok" style="width: 100%">
                 <button style="border: none; width:80px;height:30px; background-color:#dcdcdc">FILTER</button>
                 <p>Price:$17-$100</p>
             </div>
