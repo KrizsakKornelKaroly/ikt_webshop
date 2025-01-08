@@ -14,7 +14,7 @@
             background-color: rgb(243, 243, 243);
             margin: 15px 0;
         }
-        .kartya:hover
+        .kartyakep:hover
         {
             animation-name: hover;
             animation-duration: 1s;
@@ -32,13 +32,31 @@
             color: black;
             padding-left: 20px;
         }
+        .kosargomb
+        {
+            background-color: transparent;
+            width: 90px;
+            height: 30px;
+            border: white 1px solid;
+            color: white;
+            position: absolute;
+            margin-left: 55px;
+            margin-top: 80px;
+            z-index: 5;
+        }
+        .kosargomb:hover{
+            cursor: pointer;
+            background-color: rgba(255, 72, 82, 0.4);
+
+        }
     </style>
 </head>
 
 <body>
     <div tarolo style="width:200px; height:fit-content">
         <div class="kartya">
-            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát">
+            <img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát" class="kartyakep">
+            <button class="kosargomb">Add to cart</button>
             <div class="kartyaszoveg">
                 <p><b>Leather Jacket</b> </p>
                 <p style="color: rgb(255, 72, 82);"><b>$200.00</b></p>
