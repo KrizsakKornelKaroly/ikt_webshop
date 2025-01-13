@@ -2,7 +2,8 @@
 
   .slider-container {
     position: relative;
-    width: 400px;
+    width: 100%;
+    display: none;
   }
 
   .slider-track {

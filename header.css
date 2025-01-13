@@ -134,6 +134,7 @@ body {
     background-color: rgb(255, 72, 82);
     width: 100%;
     left: 0px;
+    z-index: 10;
   }
   .navElemek{
     display: block;
