@@ -236,7 +236,9 @@
         }
 
         @media screen and (max-width:900px) {
-
+            .card{
+                margin: 5px;
+            }
             .kartyaksor {
                 width: 100%;
                 flex-wrap: wrap;
@@ -288,7 +290,6 @@
                 width: 100%;
             }
 
-
         }
     </style>
 </head>
@@ -304,7 +305,10 @@
                 <a href="" class="navElemek homeGomb" >Home</a>
 
                 <div class="shopDD">
-                    <button class="shopDDgomb navElemek ">Shop <i class="nyilacska"></i></button>
+                    <div id="forMobileGombok">
+                        <button class="shopDDgomb navElemek ">Shop <i class="nyilacska"></i></button>
+                        <button id="mobileGomb">+</button>
+                    </div>
                     <div class="shopDDtartalom">
                         <a href="" class="shopDDlinkek vonalacska">Accessories</a>
                         <a href="" class="shopDDlinkek vonalacska">Casual</a>

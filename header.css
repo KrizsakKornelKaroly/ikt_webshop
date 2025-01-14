@@ -102,11 +102,11 @@ body {
 .shopDDgomb,
 .accDDgomb {
   position: relative; 
-  height: 18px;
   padding-top: 0px;
   top: -1px;
   margin-left: 10px;
 }
+#mobileGomb{display: none;}
 
 @media screen and (max-width: 820px) {
   /*.navJobb {
@@ -121,6 +121,9 @@ body {
     border: none;
     right: 5%;
     top: 3%;
+  }
+  .shopDD:hover .shopDDtartalom {
+    display: none;
   }
 
   .menuOpen:hover {
@@ -159,5 +162,21 @@ body {
   }
   .shopDD{
     float: none;
+  }
+  #mobileGomb{
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size:xx-large;
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
+  #forMobileGombok *{
+    display: inline;
+  }
+  .nyilacska{
+    display: none !important;
   }
 }
