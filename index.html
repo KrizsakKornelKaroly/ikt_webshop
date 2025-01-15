@@ -234,6 +234,28 @@
             font-size: 14px;
             color: #f00;
         }
+        .salejeltar{
+            width: 200px;
+            height: fit-content;
+
+        }
+        .salejel{
+            width: 45px;
+            height: 45px;
+            background-color: rgb(255, 72,82);
+            border-radius: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: -25%;
+            margin-left: -8%;
+            z-index: 2;
+        }
+        .salejel>p{
+            color: white;
+            font-size: small;
+        }
 
         @media screen and (max-width:900px) {
             .card{
@@ -342,22 +364,27 @@
                 </select>
             </div>
             <div class="kartyaksor">
-                <div class="card">
-                    <div class="image-container">
-                        <img src="./Kepek/leatherJacket.jpeg" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
+                <div class="salejeltar">
+                    <div class="salejel">
+                        <P>Sale!</P>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./Kepek/leatherJacket.jpeg" alt="Product Image">
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <div class="icons">
+                                        <button>❤</button>
+                                        <button>👁</button>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
                                 </div>
-                                <button class="add-to-cart">Add to Cart</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price">$35.00</div>
+                        <div class="details">
+                            <div class="title">Collar T-Shirt</div>
+                            <div class="price">$35.00</div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
