@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="range.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -55,14 +59,14 @@
             justify-content: center;
             width: 65%;
             margin-top: 0px;
-            align-content:flex-start;
+            align-content: flex-start;
         }
 
         #szortolas {
             width: 35%;
             display: flex;
             flex-direction: column;
-            
+
         }
 
         #kategoriak {
@@ -89,11 +93,12 @@
             height: 2px;
             background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
         }
-        #elvalasztoBal{
+
+        #elvalasztoBal {
             width: 96%;
         }
-        .legordulo
-        {
+
+        .legordulo {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -103,27 +108,33 @@
         .kover {
             font-weight: bold;
         }
-        hr{
+
+        hr {
             width: 100%;
             color: white !important;
             border-top: 1.5px dashed lightgray;
             border-bottom: none;
             margin: 0px 0px;
         }
-        #sortdropdown{height: 30px;
-                    margin-top: 10px;
-                    }
-        #slideradatok{
+
+        #sortdropdown {
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        #slideradatok {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-top: 20px;
             align-items: center;
         }
-        input[type="range"]{
+
+        input[type="range"] {
             position: absolute;
             top: -5px;
         }
+
         .card {
             margin-top: 20px;
             width: 200px;
@@ -234,15 +245,16 @@
             font-size: 14px;
             color: #f00;
         }
-        .salejeltar{
+
+        .salejeltar {
             width: 200px;
             height: fit-content;
-
         }
-        .salejel{
+
+        .salejel {
             width: 45px;
             height: 45px;
-            background-color: rgb(255, 72,82);
+            background-color: rgb(255, 72, 82);
             border-radius: 100%;
             justify-content: center;
             display: flex;
@@ -252,15 +264,17 @@
             margin-left: -8%;
             z-index: 2;
         }
-        .salejel>p{
+
+        .salejel>p {
             color: white;
             font-size: small;
         }
 
         @media screen and (max-width:900px) {
-            .card{
+            .card {
                 margin: 5px;
             }
+
             .kartyaksor {
                 width: 100%;
                 flex-wrap: wrap;
@@ -308,7 +322,8 @@
                 margin-right: 0px;
                 padding-left: 0px;
             }
-            #elvalasztoBal{
+
+            #elvalasztoBal {
                 width: 100%;
             }
 
@@ -317,14 +332,31 @@
 </head>
 
 <body>
-    <button onclick="tetejere()" id="tetogomb" style="width: 50px; height: 50px; background-color: transparent; border: 1px solid lightgrey; color:lightgrey; display: block; ;position: sticky; bottom: 100px; right: 100px;">&#8593;</button>
+    <button onclick="tetejere()" id="tetogomb"
+        style="width: 30px; height: 30px; background-color: transparent; border: 1px solid lightgrey; color:lightgrey; display: block; ;position: fixed; bottom: 50px; right: 50px;font-size: large;">&#8593;</button>
+    <script>
+        let felgomb = document.getElementById("tetogomb");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                felgomb.style.display = "block";
+            } else {
+                felgomb.style.display = "none";
+            }
+        }
+        function tetejere() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
     <nav style="padding-left: 10%; padding-right: 10%;">
         <div class="navBal" style="display: inline;">
             <p style="font-weight: bolder; font-size: x-large; margin-bottom: 0px;">Minta webáruház</p>
-            
-            <div class="navJobb" style="float: right; margin-top: 0;" >
-                
-                <a href="" class="navElemek homeGomb" >Home</a>
+
+            <div class="navJobb" style="float: right; margin-top: 0;">
+
+                <a href="" class="navElemek homeGomb">Home</a>
 
                 <div class="shopDD">
                     <div id="forMobileGombok">
@@ -338,7 +370,7 @@
                         <a href="" class="shopDDlinkek vonalacska">Men</a>
                         <a href="" class="shopDDlinkek">Women</a>
                     </div>
-                    
+
                 </div>
                 <button class="accDDgomb navElemek">My account <i class="nyilacska"></i></button>
                 <a href="" class="navElemek">Blog</a>
@@ -348,10 +380,11 @@
         </div>
         <button class="menuOpen">&#9776</button>
 
-        
+
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
-        <a href="" class="rootNav" style="margin-left: 0px;">Home</a> / <a href="" class="rootNav">Products</a> / <a href="" class="rootNav">Casual</a> 
+        <a href="" class="rootNav" style="margin-left: 0px;">Home</a> / <a href="" class="rootNav">Products</a> / <a
+            href="" class="rootNav">Casual</a>
     </div>
     <main>
         <div id="kartyak">
@@ -447,12 +480,12 @@
         <div id="szortolas">
             <h2>Filter by price</h2>
             <div class="elvalaszto"></div>
-              <div class="slider-container" style="margin-top:20px;width: 100%;">
+            <div class="slider-container" style="margin-top:20px;width: 100%;">
                 <div class="slider-track"></div>
                 <div class="slider-range" id="range"></div>
                 <input type="range" id="rangeMin" min="0" max="100" value="25">
                 <input type="range" id="rangeMax" min="0" max="100" value="75">
-                </div>
+            </div>
             <div id="slideradatok" style="width: 100%">
                 <button style="border: none; width:80px;height:30px; background-color:#dcdcdc">FILTER</button>
                 <p>Price:$17-$100</p>
