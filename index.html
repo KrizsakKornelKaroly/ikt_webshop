@@ -369,7 +369,7 @@
                 <div class="shopDD">
                     <div id="forMobileGombok">
                         <button class="shopDDgomb navElemek ">Shop <i class="nyilacska"></i></button>
-                        <button id="mobileGomb">+</button>
+                        <button id="mobileGomb" onclick="">+</button>
                     </div>
                     <div class="shopDDtartalom">
                         <a href="" class="shopDDlinkek vonalacska">Accessories</a>
@@ -380,14 +380,26 @@
                     </div>
 
                 </div>
-                <button class="accDDgomb navElemek">My account <i class="nyilacska"></i></button>
+                <div style="display: inline">
+                    <button class="accDDgomb navElemek">My account <i class="nyilacska"></i></button>
+                </div>
+                
                 <a href="" class="navElemek">Blog</a>
                 <a href="" class="navElemek">Contact us</a>
             </div>
             <p style="margin-top: 4px"><i>Szép webdesign-nal</i></p>
         </div>
-        <button class="menuOpen">&#9776</button>
+        <button id="menuOpen" onclick="Nyitas()">&#9776</button>
+        <script>
 
+            function Nyitas()
+            {
+                menugombocska = document.getElementById("menuOpen")
+                if(menugombocska.style.display == "none"){
+                    menugombocska.style.display = ""
+                }
+            }
+        </script>
 
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">

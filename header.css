@@ -51,7 +51,7 @@ body {
   transform: rotate(45deg);
 }
 
-.menuOpen {
+#menuOpen {
   display: none;
   color: rgb(255, 72, 82);
 }
@@ -113,7 +113,7 @@ body {
     display: none !important;
   }*/
 
-  .menuOpen {
+  #menuOpen {
     display: block;
     position: absolute;
     background-color: white;
@@ -126,7 +126,7 @@ body {
     display: none;
   }
 
-  .menuOpen:hover {
+  #menuOpen:hover {
     border: 1px solid black;
   }
 
@@ -144,7 +144,7 @@ body {
     background-color: rgb(255, 72, 82);
     color: white !important;
     padding: 20px 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid lightgrey;
     margin-left: 0px;
   }
   .shopDDgomb, .accDDgomb{
@@ -166,12 +166,14 @@ body {
   #mobileGomb{
     display: block;
     background-color: transparent;
-    border: none;
+    border: 1px solid lightgrey;
+    border-right: none;
+    width: 57px;
+    height: 57px;
     color: white;
     font-size:xx-large;
-    position: relative;
-    top: 10px;
-    right: 10px;
+    position: absolute;
+    right: 1px;
   }
   #forMobileGombok *{
     display: inline;
