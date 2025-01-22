@@ -394,10 +394,13 @@
 
             function Nyitas()
             {
-                menugombocska = document.getElementById("menuOpen")
-                if(menugombocska.style.display == "none"){
-                    menugombocska.style.display = ""
+                menunyitocska = document.getElementsByClassName("navJobb")[0]
+                if(menunyitocska.style.display == "none"){
+                    menunyitocska.style.display = "block"
                 }
+                else(
+                    menunyitocska.style.display = "none"
+                )
             }
         </script>
 
