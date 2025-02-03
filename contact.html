@@ -84,21 +84,21 @@
             <div class="oszlopok">
                 <div class="formbal">
                     <h3>Vezetéknév:</h3>
-                    <input type="text"id="veznev">
+                    <input type="text"id="veznev" class="rovidelem">
                 </div>
                 <div class="formjobb">
                     <h3>Keresztnév:</h3>
-                    <input type="text" id="kernev">
+                    <input type="text" id="kernev" class="rovidelem">
                 </div>
             </div>
             <h3>Telefon:</h3>
-            <input type="text" id="telefon">
+            <input type="text" id="telefon" class="hosszuelem">
             <h3>Email:</h3>
-            <input type="text" id="email">
+            <input type="text" id="email" class="hosszuelem">
             <div class="oszlopok">
                 <div class="formbal">
                     <h3>Ország:</h3>
-                    <select name="" id="orszagok">
+                    <select name="" id="orszagok" class="rovidelem">
                         <option value="">Tessék választani</option>
                         <option value="AT">Austria</option>
                         <option value="SK">Slovakia</option>
@@ -113,11 +113,20 @@
                     </select>
 
                 </div>
+                <div class="formjobb">
+                    <h3>Régió:</h3>
+                    <select name="" id="regio" class="rovidelem">
+                        <option value="">Tessék választani</option>
+                    </select>
+                </div>
             </div>
-
+            <h3>Nem (opcionális):</h3>
+            <input type="text" id="nem" class="hosszuelem">
+            <h3>Megjegyzés: </h3>
+            <textarea name="" id="" cols="70" rows="10" class="hosszuelem" itemid="megjegyzes"></textarea>
 
         </form>
-        <div id="jobboldal">
+        <div id="jobboldal" style="display: none;">
             <div class="card">
                 <div class="image-container">
                     <img src="./Kepek/leatherJacket.jpeg" alt="Product Image">

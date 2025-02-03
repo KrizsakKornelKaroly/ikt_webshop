@@ -214,19 +214,30 @@ form{
 
 .oszlopok{display:flex ;
         flex-direction: row;
-    justify-content: space-between;}
+        justify-content: space-between;
+    }
 
-#kernev,#veznev{width: 300px;
-                border-radius: 5px;}
-#telefon{width: 99%;
-    border-radius: 5px;
-    min-width: 607px;}
 
-    #email{width: 99%;
-        border-radius: 5px;
-        min-width: 607px;}  
-#orszagok{width: 300px;
-        font-size: larger;}
+#telefon{}
+
+#email{}  
+.formjobb{width: fit-content;}
+.formbal{width: fit-content;}
+
+#orszagok{font-size: larger;}
+
+#regio{font-size: larger;}
+
+.rovidelem{
+    width: 220px;
+    border-radius: 5px;}
+
+.hosszuelem{width: 100%;
+    border-radius: 5px;}
+
+#megjegyzes{font-size: larger; 
+    width: 100%;}
+
         
         
 
