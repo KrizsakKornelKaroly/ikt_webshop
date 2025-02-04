@@ -1,0 +1,4 @@
+function Adatfelvetel()
+{
+    alert("Belo");
+}

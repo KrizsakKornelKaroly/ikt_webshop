@@ -217,10 +217,7 @@ form{
         justify-content: space-between;
     }
 
-
-#telefon{}
-
-#email{}  
+  
 .formjobb{width: fit-content;}
 .formbal{width: fit-content;}
 
@@ -232,16 +229,17 @@ form{
     width: 220px;
     border-radius: 5px;}
 
-.hosszuelem{width: 100%;
+.hosszuelem{width: 98%;
     border-radius: 5px;}
 
 #megjegyzes{font-size: larger; 
     width: 100%;}
 
-        
+#kuldesgomb{font-size: larger;
+            margin-top: 10px;}
         
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:920px) {
     .card {
         margin: 5px;
     }
@@ -287,6 +285,17 @@ form{
     #jobboldal {
         margin: auto;
         width: 100%;
+        padding: 1px;
     }
+    form{margin: auto;}
+
+    .oszlopok{flex-direction: column;}
+
+    .rovidelem{width: 96%;}
+    .cim{text-align: center; font-size: x-large;}
+    #kozepsofooterelem{padding-left: 0px;}
+
+    
+    
 
 }

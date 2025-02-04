@@ -79,22 +79,22 @@
     </div>
     <main>
         <form action="">
-            <h1 style="margin-top:0px;margin-bottom:50px;">Kapcsolatfelvétel</h1>
-            <h3 style="margin-top:0px;margin-bottom:50px;">Problémája akadt? Kérdése van? Küldjön emailt!</h3>
+            <h1 style="margin-top:0px;margin-bottom:50px; " class="cim">Kapcsolatfelvétel</h1>
+            <h3 style="margin-top:0px;margin-bottom:50px;" class="cim">Problémája akadt? Kérdése van? Küldjön emailt!</h3>
             <div class="oszlopok">
                 <div class="formbal">
                     <h3>Vezetéknév:</h3>
-                    <input type="text"id="veznev" class="rovidelem">
+                    <input type="text"id="veznev" class="rovidelem" placeholder="Petőfi">
                 </div>
                 <div class="formjobb">
                     <h3>Keresztnév:</h3>
-                    <input type="text" id="kernev" class="rovidelem">
+                    <input type="text" id="kernev" class="rovidelem" placeholder="Sándor">
                 </div>
             </div>
             <h3>Telefon:</h3>
-            <input type="text" id="telefon" class="hosszuelem">
+            <input type="text" id="telefon" class="hosszuelem" placeholder="+18 48 195 6200">
             <h3>Email:</h3>
-            <input type="text" id="email" class="hosszuelem">
+            <input type="text" id="email" class="hosszuelem" placeholder="setofipandor@pilvax.hu">
             <div class="oszlopok">
                 <div class="formbal">
                     <h3>Ország:</h3>
@@ -121,12 +121,12 @@
                 </div>
             </div>
             <h3>Nem (opcionális):</h3>
-            <input type="text" id="nem" class="hosszuelem">
+            <input type="text" id="nem" class="hosszuelem" placeholder="XIX. századi költő">
             <h3>Megjegyzés: </h3>
-            <textarea name="" id="" cols="70" rows="10" class="hosszuelem" itemid="megjegyzes"></textarea>
-
+            <textarea name="" id="" cols="70" rows="10" class="hosszuelem" itemid="megjegyzes" placeholder="Talpra magyar, hí a haza! Itt az idő, most vagy soha! Rabok legyünk, vagy szabadok? Ez a kérdés, válasszatok! - A magyarok istenére Esküszünk, Esküszünk, hogy rabok tovább Nem leszünk!"></textarea>
+            <button id="kuldesgomb" onclick="Adatfelvetel()">Elküldés</button>
         </form>
-        <div id="jobboldal" style="display: none;">
+        <div id="jobboldal">
             <div class="card">
                 <div class="image-container">
                     <img src="./Kepek/leatherJacket.jpeg" alt="Product Image">
@@ -206,5 +206,6 @@
             <p class="footerp"><img src="./Kepek/wallet.png" alt="Pénztárca ikon" class="footerikon">100% money-back guarantee</p>
         </div>
     </footer>
+    <script src="./contact.js"></script>
 </body>
 </html>
