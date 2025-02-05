@@ -236,7 +236,7 @@ form{
 
 #kuldesgomb{font-size: larger;
             margin-top: 10px;}
-        
+input{font-size: medium;}
 
 @media screen and (max-width:920px) {
     .card {
