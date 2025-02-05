@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="contact.css">
-    <title>Üzenetküldés</title>
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./header.css">
+    <title>Blog oldal</title>
 </head>
 <body>
     <button onclick="tetejere()" id="tetogomb"
@@ -78,57 +78,10 @@
             href="" class="rootNav">Casual</a>
     </div>
     <main>
-        <form action="">
-            <h1 style="margin-top:0px;margin-bottom:50px; " class="cim">Kapcsolatfelvétel</h1>
-            <h3 style="margin-top:0px;margin-bottom:50px;" class="cim">Problémája akadt? Kérdése van? Küldjön emailt!</h3>
-            <div class="oszlopok">
-                <div class="formbal">
-                    <h3>Vezetéknév:</h3>
-                    <input type="text"id="veznev" class="rovidelem" placeholder="Petőfi">
-                </div>
-                <div class="formjobb">
-                    <h3>Keresztnév:</h3>
-                    <input type="text" id="kernev" class="rovidelem" placeholder="Sándor">
-                </div>
-            </div>
-            <h3>Telefon:</h3>
-            <input type="text" id="telefon" class="hosszuelem" placeholder="+18 48 195 6200">
-            <h3>Email:</h3>
-            <input type="text" id="email" class="hosszuelem" placeholder="setofipandor@pilvax.hu">
-            <div class="oszlopok">
-                <div class="formbal">
-                    <h3>Ország:</h3>
-                    <select name="" id="orszagok" class="rovidelem">
-                        <option value="">Tessék választani</option>
-                        <option value="AT">Austria</option>
-                        <option value="SK">Slovakia</option>
-                        <option value="RO">Romania</option>
-                        <option value="HU">Hungary</option>
-                        <option value="SI">Slovenia</option>
-                        <option value="SR">Serbia</option>
-                        <option value="UA">Ukraine</option>
-                        <option value="CZ">Czech Republic</option>
-                        <option value="PL">Poland</option>
-                        <option value="DE">Germany</option>
-                    </select>
+        <div id="blogresz">
 
-                </div>
-                <div class="formjobb">
-                    <h3>Régió:</h3>
-                    <select name="" id="regio" class="rovidelem">
-                        <option value="">Tessék választani</option>
-                        <option value="varos">Város</option>
-                        <option value="falu">Falu</option>
-                        <option value="fovaros">Főváros</option>
-                    </select>
-                </div>
-            </div>
-            <h3>Nem (opcionális):</h3>
-            <input type="text" id="nem" class="hosszuelem" placeholder="XIX. századi költő">
-            <h3>Megjegyzés: </h3>
-            <textarea name="" cols="70" rows="10" class="hosszuelem" id="megjegyzes" placeholder="Talpra magyar, hí a haza! Itt az idő, most vagy soha! Rabok legyünk, vagy szabadok? Ez a kérdés, válasszatok! - A magyarok istenére Esküszünk, Esküszünk, hogy rabok tovább Nem leszünk!"></textarea>
-            <button id="kuldesgomb" onclick="Adatfelvetel()" type="button">Elküldés</button>
-        </form>
+        </div>
+
         <div id="jobboldal">
             <div class="card">
                 <div class="image-container">
@@ -185,9 +138,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </main>
     <footer>
         <div class="footerelem">
@@ -209,6 +159,5 @@
             <p class="footerp"><img src="./Kepek/wallet.png" alt="Pénztárca ikon" class="footerikon">100% money-back guarantee</p>
         </div>
     </footer>
-    <script src="./contact.js"></script>
 </body>
 </html>
