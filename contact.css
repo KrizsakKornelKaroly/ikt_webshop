@@ -283,7 +283,6 @@ form{
 
     #jobboldal {
         margin: auto;
-        width: 100%;
         padding: 1px;
     }
     form{margin: auto;}
@@ -293,6 +292,7 @@ form{
     .rovidelem{width: 96%;}
     .cim{text-align: center; font-size: x-large;}
     #kozepsofooterelem{padding-left: 0px;}
+    #kuldesgomb{margin-bottom: 10px;}
 
     
     

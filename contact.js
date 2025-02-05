@@ -12,7 +12,13 @@ function Adatfelvetel()
 
     }
     adatok.push(adat);
-    alert("Adatok sikeresen felvéve. Köszönjük a visszajelzésed! \nNév: "+adatok[0].vnev);
+    alert("Adatok sikeresen felvéve. Köszönjük a visszajelzésed! \nNév: "
+    +adatok[adatok.length-1].vnev+" "+adatok[adatok.length-1].kernev+
+    "\nTelefon: "+adatok[adatok.length-1].telo+
+    "\nEmail: "+adatok[adatok.length-1].email+
+    "\nOrszág, régió: "+adatok[adatok.length-1].orszag+", "+adatok[adatok.length-1].regio+
+    "\nNem: "+adatok[adatok.length-1].nem+
+    "\nMegjegyzés: "+adatok[adatok.length-1].megjegyzes)
         
     
 }
