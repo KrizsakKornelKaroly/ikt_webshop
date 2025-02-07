@@ -214,11 +214,19 @@ footer {
             flex-direction: row;
             gap: 40px;
             background-color: #eae8e5;
+            border-radius: 30px;
+            text-align: justify;
+            margin-bottom: 20px;
         }
 .blogkep{width: 20%;
         height: fit-content;
         min-width: 150px;}
 .blogszoveg{width: 65%;}
+.elvalaszto {
+    width: 100%;
+    height: 2px;
+    background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
+}
 
         
 
