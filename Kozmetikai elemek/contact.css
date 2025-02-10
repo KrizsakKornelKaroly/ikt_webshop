@@ -25,7 +25,8 @@ main {
 .footerelem {
     width: 35%;
 }
-#kozepsofooterelem{
+
+#kozepsofooterelem {
     padding-left: 15px;
 }
 
@@ -203,40 +204,60 @@ footer {
     font-size: small;
 }
 
-.footerikon{
+.footerikon {
     width: 20px;
     margin-right: 30px;
 }
 
-form{
+form {
     width: 65%;
 }
 
-.oszlopok{display:flex ;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.oszlopok {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-  
-.formjobb{width: fit-content;}
-.formbal{width: fit-content;}
 
-#orszagok{font-size: larger;}
+.formjobb {
+    width: fit-content;
+}
 
-#regio{font-size: larger;}
+.formbal {
+    width: fit-content;
+}
 
-.rovidelem{
+#orszagok {
+    font-size: larger;
+}
+
+#regio {
+    font-size: larger;
+}
+
+.rovidelem {
     width: 220px;
-    border-radius: 5px;}
+    border-radius: 5px;
+}
 
-.hosszuelem{width: 98%;
-    border-radius: 5px;}
+.hosszuelem {
+    width: 98%;
+    border-radius: 5px;
+}
 
+#megjegyzes{
+    resize: none;
+}
 
+#kuldesgomb {
+    font-size: larger;
+    margin-top: 10px;
+}
 
-#kuldesgomb{font-size: larger;
-            margin-top: 10px;}
-input{font-size: medium;}
+input {
+    font-size: medium;
+}
 
 @media screen and (max-width:920px) {
     .card {
@@ -285,16 +306,33 @@ input{font-size: medium;}
         margin: auto;
         padding: 1px;
     }
-    form{margin: auto;}
 
-    .oszlopok{flex-direction: column;}
+    form {
+        margin: auto;
+    }
 
-    .rovidelem{width: 96%;}
-    .cim{text-align: center; font-size: x-large;}
-    #kozepsofooterelem{padding-left: 0px;}
-    #kuldesgomb{margin-bottom: 10px;}
+    .oszlopok {
+        flex-direction: column;
+    }
 
-    
-    
+    .rovidelem {
+        width: 96%;
+    }
+
+    .cim {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #kozepsofooterelem {
+        padding-left: 0px;
+    }
+
+    #kuldesgomb {
+        margin-bottom: 10px;
+    }
+
+
+
 
 }
