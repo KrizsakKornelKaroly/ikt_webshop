@@ -25,7 +25,8 @@ main {
 .footerelem {
     width: 35%;
 }
-#kozepsofooterelem{
+
+#kozepsofooterelem {
     padding-left: 15px;
 }
 
@@ -203,32 +204,47 @@ footer {
     font-size: small;
 }
 
-.footerikon{
+.footerikon {
     width: 20px;
     margin-right: 30px;
 }
 
-#blogresz{width: 65%;}
-.bejegyzes{width: 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            background-color: #eae8e5;
-            border-radius: 30px;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-.blogkep{width: 20%;
-        height: fit-content;
-        min-width: 150px;}
-.blogszoveg{width: 65%;}
+#blogresz {
+    width: 65%;
+}
+
+.bejegyzes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: #eae8e5;
+    border-radius: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.blogkep {
+    width: 20%;
+    height: fit-content;
+    min-width: 150px;
+}
+
+.blogszoveg {
+    width: 65%;
+}
+
 .elvalaszto {
     width: 100%;
     height: 2px;
     background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
 }
 
-        
+@media screen and (max-width: 1150px) {
+    .bejegyzes {
+        gap: 10px;
+    }
+}
 
 @media screen and (max-width:920px) {
     .card {
@@ -276,10 +292,23 @@ footer {
     #jobboldal {
         margin: auto;
         padding: 1px;
+        width: 100%;
+        border-radius: 25px;
     }
-    
 
-    
-    
+    #blogresz {
+        width: 100%;
+    }
+    .bejegyzes{
+        flex-direction: column;
+    }
+    .blogszoveg{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .blogkep{
+        margin:0 auto;
+        width: 100%;
+    }
 
 }
