@@ -228,6 +228,7 @@ footer {
     width: 20%;
     height: fit-content;
     min-width: 150px;
+    margin: auto;
 }
 
 .blogszoveg {
