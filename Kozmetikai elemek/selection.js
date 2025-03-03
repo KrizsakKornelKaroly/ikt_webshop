@@ -34,6 +34,42 @@ let tomb=[
         id:"N",
         img:"./Kepek/nyariRuhaN.jpg",
         nev:"Női nyári ruha"
+    },
+    adat7={
+        ar:"25$",
+        id:"N",
+        img:"./Kepek/feherFelsoF.jpg",
+        nev:"Fehér férfi felső"
+    },
+    adat8={
+        ar:"120$",
+        id:"N",
+        img:"./Kepek/feherKabatF.jpg",
+        nev:"Fehér férfi kabát"
+    },
+    adat9={
+        ar:"30$",
+        id:"N",
+        img:"./Kepek/feketefelsoF.jpg",
+        nev:"Fekete férfi felső"
+    },
+    adat10={
+        ar:"45$",
+        id:"N",
+        img:"./Kepek/kekfelsoF.jpg",
+        nev:"Kék férfi felső"
+    },
+    adat11={
+        ar:"500$",
+        id:"N",
+        img:"./Kepek/leatherJacketF.jpg",
+        nev:"Fekete bőrkabát"
+    },
+    adat12={
+        ar:"25$",
+        id:"N",
+        img:"./Kepek/szurkeoltonyF.jpg",
+        nev:"Szürke férfi öltöny"
     }
 ];
 function NoiAdatok()
@@ -42,7 +78,7 @@ function NoiAdatok()
     {
         let kep = document.querySelectorAll('.kartyaKep')[i];
         kep.src=tomb[i].img;
-        kep.setAttribute("title",tomb[i].nevs)
+        kep.setAttribute("title",tomb[i].nev)
         let termAr=document.querySelectorAll('.price')[i];
         termAr.innerHTML=tomb[i].ar;
         let titleK=document.querySelectorAll('.title')[i];
