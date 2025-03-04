@@ -1,7 +1,28 @@
+let alapszel = window.innerWidth;
 function Nyitas() {
-    function Valtas() {
+    menunyitocska = document.getElementsByClassName("navJobb")[0]
+    menunyitocska.style.display = "block"
+    console.log(window.innerWidth)
+    if (szelAdat <= 820) {
+        if (menunyitocska.style.display == "none") {
+            menunyitocska.style.display = "block"
+        }
+        else (
+            menunyitocska.style.display = "none"
+        )
+    }
+    else {
+        menunyitocska.style.display = "block"
+    }
+}
+function handleResize() {
+    console.log("változás")
+    let mostaniSzel = window.innerWidth;
+    if (alapszel !== mostaniSzel) {
+        alapszel = mostaniSzel;
+        console.log(window.innerWidth)
+        // Your function to run when the width changes
         if (window.innerWidth <= 820) {
-            menunyitocska = document.getElementsByClassName("navJobb")[0]
             if (menunyitocska.style.display == "none") {
                 menunyitocska.style.display = "block"
             }
@@ -9,8 +30,11 @@ function Nyitas() {
                 menunyitocska.style.display = "none"
             )
         }
-
+        else {
+            menunyitocska.style.display = "block"
+        }
     }
-
-    window.onresize = Valtas()
 }
+
+// Listen to the resize event
+window.addEventListener('resize', console.log(window.innerWidth));
