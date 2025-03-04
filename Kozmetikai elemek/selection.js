@@ -72,40 +72,40 @@ let tomb=[
         nev:"Szürke férfi öltöny"
     },
     adat13={
-        ar:"25$",
-        id:"F",
-        img:"./Kepek/feherFelsoF.jpg",
-        nev:"Fehér férfi felső"
+        ar:"45$",
+        id:"K",
+        img:"./Kepek/barnaTaskaK.jpg",
+        nev:"Barna férfi hátitáska"
     },
     adat14={
-        ar:"120$",
-        id:"F",
-        img:"./Kepek/feherKabatF.jpg",
-        nev:"Fehér férfi kabát"
+        ar:"12$",
+        id:"K",
+        img:"./Kepek/borosUvegK.jpg",
+        nev:"Fekete üvegpalack"
     },
     adat15={
-        ar:"30$",
-        id:"F",
-        img:"./Kepek/feketefelsoF.jpg",
-        nev:"Fekete férfi felső"
+        ar:"10$",
+        id:"K",
+        img:"./Kepek/keresztnyaklK.jpg",
+        nev:"Kereszt nyaklánc"
     },
     adat16={
         ar:"45$",
-        id:"F",
-        img:"./Kepek/kekfelsoF.jpg",
-        nev:"Kék férfi felső"
+        id:"K",
+        img:"./Kepek/rozsaTaskaK.jpg",
+        nev:"Rózsaszín hátitáska"
     },
     adat17={
-        ar:"500$",
-        id:"F",
-        img:"./Kepek/leatherJacketF.jpeg",
-        nev:"Fekete bőrkabát"
+        ar:"12$",
+        id:"K",
+        img:"./Kepek/rozsaUvegK.jpg",
+        nev:"Rózsaszín üvegpalack"
     },
     adat18={
         ar:"25$",
-        id:"F",
-        img:"./Kepek/szurkeoltonyF.jpg",
-        nev:"Szürke férfi öltöny"
+        id:"K",
+        img:"./Kepek/sportTaskaK.jpg",
+        nev:"Férfi sporttáska"
     }
 ];
 function NoiAdatok()
@@ -158,7 +158,7 @@ function KiegAdatok()
     let j=0;
     for(let i=0;i<tomb.length;i++)
     {
-        if(tomb[i].id=="")
+        if(tomb[i].id=="K")
         {
             
             let kep = document.querySelectorAll('.kartyaKep')[j];
