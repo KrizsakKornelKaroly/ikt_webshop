@@ -142,7 +142,44 @@ let tomb=[
         id:"R",
         img:"./Kepek/keksportcipoR.jpg",
         nev:"Kék sportcipő"
+    },
+    adat25={
+        ar:"30",
+        id:"C",
+        img:"./Kepek/farmerekC.jpg",
+        nev:"Farmer nadrágok választható színben"
+    },
+    adat26={
+        ar:"60",
+        id:"C",
+        img:"./Kepek/ingekC.jpg",
+        nev:"Ingek választható színben"
+    },
+    adat27={
+        ar:"90",
+        id:"C",
+        img:"./Kepek/polokC.jpg",
+        nev:"Pólók választható színben"
+    },
+    adat28={
+        ar:"15",
+        id:"C",
+        img:"./Kepek/pulcsikC.jpg",
+        nev:"Pulóverek választható színben"
+    },
+    adat29={
+        ar:"100",
+        id:"C",
+        img:"./Kepek/sapiC.jpg",
+        nev:"Baseball sapkák több színben"
+    },
+    adat30={
+        ar:"75",
+        id:"C",
+        img:"./Kepek/sportcipokC.jpg",
+        nev:"Sportcipők több színben"
     }
+
     
 
 ];
@@ -239,6 +276,30 @@ function RuhaAdatok()
     }
 }
 
+function CasualAdatok()
+{
+    let j=0;
+    for(let i=0;i<tomb.length;i++)
+    {
+        if(tomb[i].id=="C")
+        {
+            
+            let kep = document.querySelectorAll('.kartyaKep')[j];
+            kep.src=tomb[i].img;
+            kep.title=tomb[i].nev;
+            kep.setAttribute("title",tomb[i].nev)
+            let termAr=document.querySelectorAll('.price')[j];
+            termAr.innerHTML="$"+tomb[i].ar;
+            let titleK=document.querySelectorAll('.title')[j];
+            titleK.textContent="";
+            titleK.innerHTML=tomb[i].nev;
+            j++;
+        }
+
+
+    }
+}
+
 if(document.title=="Női ruhák")
 {
     NoiAdatok();
@@ -255,4 +316,8 @@ if(document.title=="Kiegészítők")
 if(document.title=="Egyéb ruházatok, cipők")
 {
     RuhaAdatok();
+}
+if(document.title=="Casual")
+{
+    CasualAdatok();
 }
