@@ -321,3 +321,15 @@ if(document.title=="Casual")
 {
     CasualAdatok();
 }
+
+function CsökRendez()
+{
+    
+}
+
+function Atrendezes()
+{
+    let sortErtek=document.getElementById("sortdropdown").value;
+    if(sortErtek=="csök")
+    {CsökRendez()}
+}
