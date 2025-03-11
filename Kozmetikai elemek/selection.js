@@ -178,7 +178,46 @@ let tomb=[
         id:"C",
         img:"./Kepek/sportcipokC.jpg",
         nev:"Sportcipők több színben"
+        
+    },
+    adat31={
+        ar:"30",
+        id:"C",
+        img:"./Kepek/farmerekC.jpg",
+        nev:"Farmer nadrágok választható színben"
+    },
+    adat32={
+        ar:"60",
+        id:"C",
+        img:"./Kepek/ingekC.jpg",
+        nev:"Ingek választható színben"
+    },
+    adat33={
+        ar:"90",
+        id:"C",
+        img:"./Kepek/polokC.jpg",
+        nev:"Pólók választható színben"
+    },
+    adat34={
+        ar:"15",
+        id:"C",
+        img:"./Kepek/pulcsikC.jpg",
+        nev:"Pulóverek választható színben"
+    },
+    adat35={
+        ar:"100",
+        id:"C",
+        img:"./Kepek/sapiC.jpg",
+        nev:"Baseball sapkák több színben"
+    },
+    adat36={
+        ar:"75",
+        id:"C",
+        img:"./Kepek/sportcipokC.jpg",
+        nev:"Sportcipők több színben"
+        
     }
+
 
     
 
