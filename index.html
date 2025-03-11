@@ -1,345 +1,12 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual</title>
+    <title>Főoldal</title>
     <link rel="stylesheet" href="./Kozmetikai elemek/header.css">
-    <link rel="stylesheet" href="./Kozmetikai elemek/range.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .footerp {
-            color: rgb(175, 175, 175);
-        }
-
-        main {
-            height: fit-content;
-            display: flex;
-            flex-direction: row;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        .footerelem {
-            width: 35%;
-        }
-        #kozepsofooterelem{
-            padding-left: 15px;
-        }
-
-        footer {
-            background-color: #100e1c;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
-
-
-        .kartyaksor {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 96%;
-        }
-
-        #kartyak {
-            flex-direction: column;
-            justify-content: center;
-            width: 65%;
-            margin-top: 0px;
-            align-content: flex-start;
-        }
-
-        #szortolas {
-            width: 35%;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        #kategoriak {
-            line-height: 10px;
-            list-style-type: none;
-            padding-left: 0px;
-        }
-
-        .kategoriaelem {
-            padding-left: 10px;
-            margin-right: 50px;
-        }
-
-        .topelem {
-            border-bottom: 0.5px dashed lightgray;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .elvalaszto {
-            width: 100%;
-            height: 2px;
-            background: -webkit-linear-gradient(left, #f80000 20%, #d8d8d8 20%);
-        }
-
-        #elvalasztoBal {
-            width: 96%;
-        }
-
-        .legordulo {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: darkgray;
-        }
-
-        .kover {
-            font-weight: bold;
-        }
-
-        hr {
-            width: 100%;
-            color: white !important;
-            border-top: 1.5px dashed lightgray;
-            border-bottom: none;
-            margin: 0px 0px;
-        }
-
-        #sortdropdown {
-            height: 30px;
-            margin-top: 10px;
-        }
-
-        #slideradatok {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 20px;
-            align-items: center;
-        }
-
-        input[type="range"] {
-            position: absolute;
-            top: -5px;
-        }
-
-        .card {
-            margin-top: 20px;
-            width: 200px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: #fff;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .card .image-container {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: filter 0.3s ease;
-        }
-
-        .card:hover img {
-            filter: brightness(0.5);
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(255, 72, 82, 0.75);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .card:hover .overlay {
-            opacity: 1;
-        }
-
-        .overlay .buttons {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .overlay .buttons .add-to-cart {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-            border: 1px solid #fff;
-            color: #fff;
-            padding: 10px 10px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .overlay .buttons .add-to-cart:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .overlay .buttons .icons {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .overlay .buttons .icons button {
-            background-color: #fff;
-            border: none;
-            border-radius: 50px;
-            padding: 8px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .overlay .buttons .icons button:hover {
-            background-color: #ddd;
-        }
-
-        .card .details {
-            padding: 10px;
-            text-align: left;
-        }
-
-        .card .details .title {
-            font-size: 16px;
-            font-weight: bold;
-            margin: 5px 0;
-        }
-
-        .card .details .price {
-            font-size: 14px;
-            color: #f00;
-        }
-
-        .salejeltar {
-            width: 200px;
-            height: fit-content;
-            margin-right: 12px;
-        }
-
-        .salejel {
-            width: 45px;
-            height: 45px;
-            background-color: rgb(255, 72, 82);
-            border-radius: 100%;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            position: relative;
-            margin-bottom: -22.5%;
-            margin-left: -8%;
-            z-index: 2;
-        }
-
-        .salejel>p {
-            color: white;
-            font-size: small;
-        }
-        
-        .footerikon{
-            width: 20px;
-            margin-right: 30px;
-        }
-
-        @media screen and (max-width:900px) {
-            .card {
-                margin: 5px;
-            }
-
-            .kartyaksor {
-                width: 100%;
-                flex-wrap: wrap;
-                margin: 0 auto;
-                justify-content: center;
-            }
-
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footerelem {
-                width: 100%;
-                margin: 0%;
-            }
-
-            #kartyak {
-                width: 100%;
-                justify-content: center;
-                margin-left: 0px;
-            }
-
-            main {
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            .kartya {
-                margin-bottom: 20px;
-                width: 300px;
-                justify-content: center;
-            }
-
-            .kartyaszoveg {
-                font-size: larger;
-            }
-
-            #szortolas {
-                margin: auto;
-                width: 100%;
-            }
-
-            .kategoriaelem {
-                margin-right: 0px;
-                padding-left: 0px;
-            }
-
-            #elvalasztoBal {
-                width: 100%;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="./Kozmetikai elemek/fooldal.css">
 </head>
-
 <body>
     <button onclick="tetejere()" id="tetogomb"
         style="width: 30px; height: 30px; background-color: transparent; border: 1px solid lightgrey; color:lightgrey; display: block; ;position: fixed; bottom: 50px; right: 50px;font-size: large;">&#8593;</button>
@@ -365,7 +32,7 @@
 
             <div class="navJobb" style="float: right; margin-top: 0;">
 
-                <a href="./fooldal.html" class="navElemek homeGomb">Home</a>
+                <a href="./index.html" class="navElemek homeGomb">Home</a>
 
                 <div class="shopDD">
                     <div id="forMobileGombok">
@@ -374,10 +41,10 @@
                     </div>
                     <div class="shopDDtartalom">
                         <a href="./kiegeszOldal.html" class="shopDDlinkek vonalacska">Accessories</a>
-                        <a href="./index.html" class="shopDDlinkek vonalacska">Casual</a>
+                        <a href="./casual.html" class="shopDDlinkek vonalacska">Casual</a>
                         <a href="./ruhazatOldal.html" class="shopDDlinkek vonalacska">Clothing</a>
                         <a href="./ferfiOldal.html" class="shopDDlinkek vonalacska">Men</a>
-                        <a href="noiRuhak.html" class="shopDDlinkek" id="noi">Women</a>
+                        <a href="./noiRuhak.html" class="shopDDlinkek">Women</a>
                     </div>
 
                 </div>
@@ -395,27 +62,42 @@
 
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
-        <a href="" class="rootNav" style="margin-left: 0px;">Home</a> / <a href="" class="rootNav">Products</a> / <a
-            href="" class="rootNav">Casual</a>
+        <a href="" class="rootNav" style="margin-left: 0px;">Home</a>
     </div>
+        <h1 style="display: block; padding-left: 10%;">Üdvözöljük az oldalon!</h1>
     <main>
-        <div id="kartyak">
-            <h2>Casual</h2>
-            <div class="elvalaszto" id="elvalasztoBal"></div>
-            <div class="legordulo" style="width: 96%;">
-                <p>Showing all 6 results</p>
-                <select name="" id="sortdropdown">
-                    <option value="0">Default sorting</option>
-                </select>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="./Kepek/sliderkep1.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./Kepek/sliderkep2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./Kepek/terkep.png" style="width:100%">
+                </div>
+              
+                <!-- 
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            -->
             </div>
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        
+            <h1>Kiemelt termékeink, kedvezményeink</h1>
             <div class="kartyaksor">
                 <div class="salejeltar">
-                    <div class="salejel">
-                        <P>Sale!</P>
-                    </div>
                     <div class="card">
                         <div class="image-container">
-                            <img class="kartyaKep" alt="Product Image">
+                            <img src="./Kepek/rozsaTaskaK.jpg" alt="Product Image">
                             <div class="overlay">
                                 <div class="buttons">
                                     <div class="icons">
@@ -427,14 +109,14 @@
                             </div>
                         </div>
                         <div class="details">
-                            <div class="title">Collar T-Shirt</div>
-                            <div class="price">$100.00</del></div>
+                            <div class="title">Rózsaszín táska</div>
+                            <div class="price" style="font-weight: bold;"><del style="color: grey;">$100.00</del> $50.00</div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="image-container">
-                        <img class="kartyaKep" alt="Product Image">
+                        <img src="./Kepek/keresztnyaklK.jpg" alt="Product Image">
                         <div class="overlay">
                             <div class="buttons">
                                 <div class="icons">
@@ -446,13 +128,13 @@
                         </div>
                     </div>
                     <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price"></div>
+                        <div class="title">Kereszt nyaklánc</div>
+                        <div class="price">$15.00</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="image-container">
-                        <img class="kartyaKep" alt="Product Image">
+                        <img src="./Kepek/farmerekC.jpg" alt="Product Image">
                         <div class="overlay">
                             <div class="buttons">
                                 <div class="icons">
@@ -464,145 +146,11 @@
                         </div>
                     </div>
                     <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price"></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image-container">
-                        <img class="kartyaKep" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
-                                </div>
-                                <button class="add-to-cart">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-container">
-                        <img class="kartyaKep" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
-                                </div>
-                                <button class="add-to-cart">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-container">
-                        <img class="kartyaKep" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
-                                </div>
-                                <button class="add-to-cart">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Collar T-Shirt</div>
-                        <div class="price"></div>
+                        <div class="title">Farmerek több színben</div>
+                        <div class="price">$32.00</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="szortolas">
-            <h2>Filter by price</h2>
-            <div class="elvalaszto"></div>
-            <div class="slider-container" style="margin-top:20px;width: 100%;">
-                <div class="slider-track"></div>
-                <div class="slider-range" id="range"></div>
-                <input type="range" id="rangeMin" min="0" max="100" value="25">
-                <input type="range" id="rangeMax" min="0" max="100" value="75">
-            </div>
-            <div id="slideradatok" style="width: 100%">
-                <button style="border: none; width:80px;height:30px; background-color:#dcdcdc">FILTER</button>
-                <p>Price:$17-$100</p>
-            </div>
-            <h3>Product categories</h3>
-            <div class="elvalaszto"></div>
-
-            <ul id="kategoriak">
-                <li class="kategoriaelem">
-                    <h4>&#8226 Accessories</h4>
-                </li>
-                <hr>
-                <li class="kategoriaelem">
-                    <h4>&#8226 Casual</h4>
-                </li>
-                <hr>
-                <li class="kategoriaelem">
-                    <h4>&#8226 Clothing</h4>
-                </li>
-                <hr>
-                <li class="kategoriaelem">
-                    <h4>&#8226 Men</h4>
-                </li>
-                <hr>
-                <li class="kategoriaelem" style="border-bottom: none;">
-                    <h4>&#8226 Women</h4>
-                </li>
-            </ul>
-
-            <h3 style="margin-top: 20px;">Top rated products:</h3>
-            <div class="elvalaszto"></div>
-            <ul id="kategoriak">
-                <li class="topelem">
-                    <div class="toprszoveg">
-                        <p class="kover"> &#8226 Leather Jacket</p>
-                        <p>&nbsp $200</p>
-                    </div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát"
-                        style="width: 30px; height: 25px; padding-bottom: 15px; padding-top: 15px;">
-                </li>
-                <li class="topelem">
-                    <div class="toprszoveg">
-                        <p class="kover"> &#8226 Leather Jacket</p>
-                        <p>&nbsp $200</p>
-                    </div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát"
-                        style="width: 30px; height: 25px; padding-bottom: 15px; padding-top: 15px;">
-                </li>
-                <li class="topelem">
-                    <div class="toprszoveg">
-                        <p class="kover"> &#8226 Leather Jacket</p>
-                        <p >&nbsp <del style="color: grey;">$100.00</del> <span style="background-color: yellow;">$50.00</span></p>
-                    </div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát"
-                        style="width: 30px; height: 25px; padding-bottom: 15px; padding-top: 15px;">
-                </li>
-                <li class="topelem">
-                    <div class="toprszoveg">
-                        <p class="kover"> &#8226 Leather Jacket</p>
-                        <p>&nbsp $200</p>
-                    </div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát"
-                        style="width: 30px; height: 25px; padding-bottom: 15px; padding-top: 15px;">
-                </li>
-                <li class="topelem" style="border-bottom: none;">
-                    <div class="toprszoveg">
-                        <p class="kover"> &#8226 Leather Jacket</p>
-                        <p>&nbsp $200</p>
-                    </div><img src="./Kepek/leatherJacket.jpeg" alt="Bőr Kabát" title="Bőr Kabát"
-                        style="width: 30px; height: 25px; padding-bottom: 15px; padding-top: 15px;">
-                </li>
-            </ul>
-        </div>
     </main>
     <footer>
         <div class="footerelem">
@@ -624,8 +172,22 @@
             <p class="footerp"><img src="./Kepek/wallet.png" alt="Pénztárca ikon" class="footerikon">100% money-back guarantee</p>
         </div>
     </footer>
-    <script src="./Kozmetikai elemek/range.js"></script>
-    <script src="./Kozmetikai elemek/selection.js"></script>
-</body>
 
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+</body>
 </html>

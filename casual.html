@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiegészítők</title>
+    <title>Casual</title>
     <link rel="stylesheet" href="./Kozmetikai elemek/header.css">
     <link rel="stylesheet" href="./Kozmetikai elemek/range.css">
     <style>
@@ -365,7 +365,7 @@
 
             <div class="navJobb" style="float: right; margin-top: 0;">
 
-                <a href="./index.html" class="navElemek homeGomb">Home</a>
+                <a href="./fooldal.html" class="navElemek homeGomb">Home</a>
 
                 <div class="shopDD">
                     <div id="forMobileGombok">
@@ -374,7 +374,7 @@
                     </div>
                     <div class="shopDDtartalom">
                         <a href="./kiegeszOldal.html" class="shopDDlinkek vonalacska">Accessories</a>
-                        <a href="./casual.html" class="shopDDlinkek vonalacska">Casual</a>
+                        <a href="./index.html" class="shopDDlinkek vonalacska">Casual</a>
                         <a href="./ruhazatOldal.html" class="shopDDlinkek vonalacska">Clothing</a>
                         <a href="./ferfiOldal.html" class="shopDDlinkek vonalacska">Men</a>
                         <a href="noiRuhak.html" class="shopDDlinkek" id="noi">Women</a>
@@ -391,19 +391,7 @@
             <p style="margin-top: 4px"><i>Szép webdesign-nal</i></p>
         </div>
         <button id="menuOpen" onclick="Nyitas()">&#9776</button>
-        <script>
-
-            function Nyitas()
-            {
-                menunyitocska = document.getElementsByClassName("navJobb")[0]
-                if(menunyitocska.style.display == "none"){
-                    menunyitocska.style.display = "block"
-                }
-                else(
-                    menunyitocska.style.display = "none"
-                )
-            }
-        </script>
+        <script src="./Kozmetikai elemek/navOpen.js"></script>
 
     </nav>
     <div class="fityulacsik" style="padding-left: 10%; padding-right: 10%;">
@@ -416,10 +404,8 @@
             <div class="elvalaszto" id="elvalasztoBal"></div>
             <div class="legordulo" style="width: 96%;">
                 <p>Showing all 6 results</p>
-                <select name="sortdropdown" id="sortdropdown" onchange="Atrendezes()">
-                    <option value="def">Default sorting</option>
-                    <option value="növ">Increasing by price</option>
-                    <option value="csök">Decreasing by price</option>
+                <select name="" id="sortdropdown">
+                    <option value="0">Default sorting</option>
                 </select>
             </div>
             <div class="kartyaksor">
