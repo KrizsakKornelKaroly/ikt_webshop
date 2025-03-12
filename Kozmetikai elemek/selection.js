@@ -71,38 +71,38 @@ let tomb=[
         img:"./Kepek/szurkeoltonyF.jpg",
         nev:"Szürke férfi öltöny"
     },
-    adat13={
-        ar:"45",
+    {
+        ar:"60",
         id:"K",
         img:"./Kepek/barnaTaskaK.jpg",
         nev:"Barna férfi hátitáska"
     },
-    adat14={
-        ar:"12",
+    {
+        ar:"13",
         id:"K",
         img:"./Kepek/borosUvegK.jpg",
         nev:"Fekete üvegpalack"
     },
-    adat15={
-        ar:"10",
+    {
+        ar:"50",
         id:"K",
         img:"./Kepek/keresztnyaklK.jpg",
         nev:"Kereszt nyaklánc"
     },
-    adat16={
+    {
         ar:"45",
         id:"K",
         img:"./Kepek/rozsaTaskaK.jpg",
         nev:"Rózsaszín hátitáska"
     },
-    adat17={
+    {
         ar:"12",
         id:"K",
         img:"./Kepek/rozsaUvegK.jpg",
         nev:"Rózsaszín üvegpalack"
     },
-    adat18={
-        ar:"25",
+    {
+        ar:"35",
         id:"K",
         img:"./Kepek/sportTaskaK.jpg",
         nev:"Férfi sporttáska"
@@ -361,17 +361,55 @@ if(document.title=="Casual")
     CasualAdatok();
 }
 
-function CsokkenRendez(valaszottoldal)
+
+//N, F, K, R, C
+function RendezSorrend(valaszottoldal, irany)
 {
-    
+    let szuroFeltetel;
+    let szurtRuhak = [];
     switch (valaszottoldal) {
-        case value:
-            
+        case "Női ruhák":
+            szuroFeltetel = "N"
             break;
-    
+        case "Férfi ruhák":
+            szuroFeltetel = "F";
+            break;
+        case "Kiegészítők":
+            szuroFeltetel = "K";
+            break;
+        case "Egyéb ruházatok, cipők":
+            szuroFeltetel = "R";
+            break;
+        case "Casual":
+            szuroFeltetel = "C";
+            break;
         default:
+            alert("Hiba történt a szűrés közben!");
             break;
     }
+    for (let i = 0; i < tomb.length; i++) {
+        if(tomb[i].id == szuroFeltetel){
+            szurtRuhak.push(tomb[i]);
+        }
+    }
+
+    szurtRuhak.sort((a, b) => a.ar - b.ar)
+
+    let j=0;
+    for(let i=0;i<tomb.length;i++)
+    {
+            let kep = document.querySelectorAll('.kartyaKep')[j];
+            kep.src=szurtRuhak[i].img;
+            kep.title=szurtRuhak[i].nev;
+            kep.setAttribute("title",szurtRuhak[i].nev)
+            let termAr=document.querySelectorAll('.price')[j];
+            termAr.innerHTML="$"+szurtRuhak[i].ar;
+            let titleK=document.querySelectorAll('.title')[j];
+            titleK.textContent="";
+            titleK.innerHTML=szurtRuhak[i].nev;
+            j++;
+    }
+
 }
 
 function Atrendezes()
@@ -379,6 +417,9 @@ function Atrendezes()
     let sortErtek=document.getElementById("sortdropdown").value;
     if(sortErtek=="csök")
     {
-        CsokkenRendez(document.title)
+        RendezSorrend(document.title, "csok")
+    }
+    else{
+        RendezSorrend(document.title, "nov")
     }
 }
