@@ -183,38 +183,38 @@ let tomb=[
     adat31={
         ar:"30",
         id:"C",
-        img:"./Kepek/farmerekC.jpg",
-        nev:"Farmer nadrágok választható színben"
+        img:"./Kepek/feherNaciC.jpg",
+        nev:"Fehér farmer nadrágok"
     },
     adat32={
         ar:"60",
         id:"C",
-        img:"./Kepek/ingekC.jpg",
-        nev:"Ingek választható színben"
+        img:"./Kepek/feketeIngekC.jpg",
+        nev:"Fekete ingek"
     },
     adat33={
         ar:"90",
         id:"C",
-        img:"./Kepek/polokC.jpg",
-        nev:"Pólók választható színben"
+        img:"./Kepek/feherPolokC.jpg",
+        nev:"Fehér pólók"
     },
     adat34={
         ar:"15",
         id:"C",
-        img:"./Kepek/pulcsikC.jpg",
-        nev:"Pulóverek választható színben"
+        img:"./Kepek/gatyaC.jpg",
+        nev:"Fehérneműk több színben"
     },
     adat35={
-        ar:"100",
+        ar:"10",
         id:"C",
-        img:"./Kepek/sapiC.jpg",
-        nev:"Baseball sapkák több színben"
+        img:"./Kepek/kesztyuC.jpg",
+        nev:"Munkás kesztyűk több színben"
     },
     adat36={
-        ar:"75",
+        ar:"5",
         id:"C",
-        img:"./Kepek/sportcipokC.jpg",
-        nev:"Sportcipők több színben"
+        img:"./Kepek/zokciC.jpg",
+        nev:"Zoknik több színben"
         
     }
 
