@@ -361,14 +361,24 @@ if(document.title=="Casual")
     CasualAdatok();
 }
 
-function CsökRendez()
+function CsokkenRendez(valaszottoldal)
 {
     
+    switch (valaszottoldal) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
 }
 
 function Atrendezes()
 {
     let sortErtek=document.getElementById("sortdropdown").value;
     if(sortErtek=="csök")
-    {CsökRendez()}
+    {
+        CsokkenRendez(document.title)
+    }
 }
