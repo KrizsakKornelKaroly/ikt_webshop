@@ -404,8 +404,10 @@
             <div class="elvalaszto" id="elvalasztoBal"></div>
             <div class="legordulo" style="width: 96%;">
                 <p>Showing all 6 results</p>
-                <select name="" id="sortdropdown">
-                    <option value="0">Default sorting</option>
+                <select name="sortdropdown" id="sortdropdown" onchange="Atrendezes()">
+                    <option value="alap">Default sorting</option>
+                    <option value="increase">Increasing by price</option>
+                    <option value="decrease">Decreasing by price</option>
                 </select>
             </div>
             <div class="kartyaksor">

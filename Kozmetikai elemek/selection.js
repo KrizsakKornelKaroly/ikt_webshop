@@ -218,149 +218,11 @@ let tomb=[
         
     }
 
-
-    
-
 ];
-function NoiAdatok()
-{
-    for(let i=0;i<tomb.length;i++)
-    {
-        if(tomb[i].id=="N")
-        {
-            let kep = document.querySelectorAll('.kartyaKep')[i];
-            kep.src=tomb[i].img;
-            kep.title=tomb[i].nev;
-            kep.setAttribute("title",tomb[i].nev)
-            let termAr=document.querySelectorAll('.price')[i];
-            termAr.innerHTML="$"+tomb[i].ar;
-            let titleK=document.querySelectorAll('.title')[i];
-            titleK.textContent="";
-            titleK.innerHTML=tomb[i].nev;
-        }
 
-
-    }
+window.onload = function(){
+    Atrendezes();
 }
-
-function FerfiAdatok()
-{
-    let j=0;
-    for(let i=0;i<tomb.length;i++)
-    {
-        if(tomb[i].id=="F")
-        {
-            
-            let kep = document.querySelectorAll('.kartyaKep')[j];
-            kep.src=tomb[i].img;
-            kep.title=tomb[i].nev;
-            kep.setAttribute("title",tomb[i].nev)
-            let termAr=document.querySelectorAll('.price')[j];
-            termAr.innerHTML="$"+tomb[i].ar;
-            let titleK=document.querySelectorAll('.title')[j];
-            titleK.textContent="";
-            titleK.innerHTML=tomb[i].nev;
-            j++;
-        }
-
-
-    }
-}
-
-function KiegAdatok()
-{
-    let j=0;
-    for(let i=0;i<tomb.length;i++)
-    {
-        if(tomb[i].id=="K")
-        {
-            
-            let kep = document.querySelectorAll('.kartyaKep')[j];
-            kep.src=tomb[i].img;
-            kep.title=tomb[i].nev;
-            kep.setAttribute("title",tomb[i].nev)
-            let termAr=document.querySelectorAll('.price')[j];
-            termAr.innerHTML="$"+tomb[i].ar;
-            let titleK=document.querySelectorAll('.title')[j];
-            titleK.textContent="";
-            titleK.innerHTML=tomb[i].nev;
-            j++;
-        }
-
-
-    }
-}
-
-function RuhaAdatok()
-{
-    let j=0;
-    for(let i=0;i<tomb.length;i++)
-    {
-        if(tomb[i].id=="R")
-        {
-            
-            let kep = document.querySelectorAll('.kartyaKep')[j];
-            kep.src=tomb[i].img;
-            kep.title=tomb[i].nev;
-            kep.setAttribute("title",tomb[i].nev)
-            let termAr=document.querySelectorAll('.price')[j];
-            termAr.innerHTML="$"+tomb[i].ar;
-            let titleK=document.querySelectorAll('.title')[j];
-            titleK.textContent="";
-            titleK.innerHTML=tomb[i].nev;
-            j++;
-        }
-
-
-    }
-}
-
-function CasualAdatok()
-{
-    let j=0;
-    for(let i=0;i<tomb.length;i++)
-    {
-        if(tomb[i].id=="C")
-        {
-            
-            let kep = document.querySelectorAll('.kartyaKep')[j];
-            kep.src=tomb[i].img;
-            kep.title=tomb[i].nev;
-            kep.setAttribute("title",tomb[i].nev)
-            let termAr=document.querySelectorAll('.price')[j];
-            termAr.innerHTML="$"+tomb[i].ar;
-            let titleK=document.querySelectorAll('.title')[j];
-            titleK.textContent="";
-            titleK.innerHTML=tomb[i].nev;
-            j++;
-        }
-
-
-    }
-}
-
-if(document.title=="Női ruhák")
-{
-    NoiAdatok();
-}
-
-if(document.title=="Férfi ruhák")
-{
-    FerfiAdatok();
-}
-if(document.title=="Kiegészítők")
-{
-    KiegAdatok();
-}
-if(document.title=="Egyéb ruházatok, cipők")
-{
-    RuhaAdatok();
-}
-if(document.title=="Casual")
-{
-    CasualAdatok();
-}
-
 
 //N, F, K, R, C
 function RendezSorrend(valaszottoldal, irany)
@@ -393,7 +255,19 @@ function RendezSorrend(valaszottoldal, irany)
         }
     }
 
-    szurtRuhak.sort((a, b) => a.ar - b.ar)
+    switch (irany) {
+        case "nov":
+            szurtRuhak.sort((a, b) => a.ar - b.ar)
+            break;
+        case "csok":
+            szurtRuhak.sort((a, b) => b.ar - a.ar)
+            break;
+        case "alap":
+            break;
+        default:
+            alert("Hiba történt a szűrés közben! 2")
+            break;
+    }
 
     let j=0;
     for(let i=0;i<tomb.length;i++)
@@ -414,12 +288,19 @@ function RendezSorrend(valaszottoldal, irany)
 
 function Atrendezes()
 {
-    let sortErtek=document.getElementById("sortdropdown").value;
-    if(sortErtek=="csök")
-    {
-        RendezSorrend(document.title, "csok")
-    }
-    else{
-        RendezSorrend(document.title, "nov")
+    let sortErtek = document.getElementById("sortdropdown").value;
+    switch (sortErtek) {
+        case "decrease":
+            RendezSorrend(document.title, "csok")
+            break;
+        case "increase":
+            RendezSorrend(document.title, "nov")
+            break
+        case "alap":
+            RendezSorrend(document.title, "alap")
+            break;
+        default:
+            alert("Hiba történt a szűrés közben!")
+            break;
     }
 }
