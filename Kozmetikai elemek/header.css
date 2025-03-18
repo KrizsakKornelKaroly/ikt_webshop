@@ -110,6 +110,9 @@ body {
 #mobileGomb{display: none;}
 
 @media screen and (max-width: 820px) {
+  .shopDDtartalom{
+    display: block;
+  }
   #menuOpen {
     display: block;
     position: absolute;
@@ -119,10 +122,6 @@ body {
     right: 5%;
     top: 3%;
   }
-  .shopDD:hover .shopDDtartalom {
-    display: none;
-  }
-
   #menuOpen:hover {
     border: 1px solid black;
   }
@@ -136,7 +135,7 @@ body {
     left: 0px;
     z-index: 10;
   }
-  .navElemek{
+  .navElemek, .shopDDtartalom{
     display: block;
     background-color: rgb(255, 72, 82);
     color: white !important;
@@ -144,6 +143,7 @@ body {
     border-bottom: 1px solid lightgrey;
     margin-left: 0px;
   }
+
   .shopDDgomb, .accDDgomb{
     display: block;
   }

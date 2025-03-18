@@ -20,3 +20,6 @@ setInterval(() => {
     }
 }, 10);
 
+function mobileShopOpen(){
+    alert("Ezjó")
+}
