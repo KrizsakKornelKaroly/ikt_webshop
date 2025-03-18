@@ -2,4 +2,4 @@ K: Kiegészítő (pl nyaklánc, karkötő, táska...)
 F: Férfi ruházat (pl pólók, pulcsik, kabátok...)
 N: Női ruházat (pl nyári ruhák, kardigánok, szőrmék...)
 R: Ruházat, kvázi vegyes, a clothing oldalhoz(a fentiek közül basically akármi)
-C: casual, nem tudom mi kéne ide :>(
+C: casual, többszínű általános gúnyák
