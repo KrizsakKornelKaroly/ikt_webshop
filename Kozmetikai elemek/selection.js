@@ -1,71 +1,71 @@
 let tomb=[
-     adat1={
+     {
         ar:"20",
         id:"N",
         img:"./Kepek/lilaPoloN.jpg",
         nev:"Lila Póló"
     },
-    adat2={
+    {
         ar:"200",
         id:"N",
         img:"./Kepek/szormeKabatN.jpg",
         nev:"Szőrme kabát"
     },
-    adat3={
+    {
         ar:"10",
         id:"N",
         img:"./Kepek/feketePoloN.jpg",
         nev:"Fekete Női Póló"
     },
-    adat4={
+    {
         ar:"45",
         id:"N",
         img:"./Kepek/feketeTaskaN.jpg",
         nev:"Fekete női táska"
     },
-    adat5={
+    {
         ar:"1000",
         id:"N",
         img:"./Kepek/nyaklancN.jpg",
         nev:"Női gyémánt nyaklánc"
     },
-    adat6={
+    {
         ar:"25",
         id:"N",
         img:"./Kepek/nyariRuhaN.jpg",
         nev:"Női nyári ruha"
     },
-    adat7={
+    {
         ar:"25",
         id:"F",
         img:"./Kepek/feherFelsoF.jpg",
         nev:"Fehér férfi felső"
     },
-    adat8={
+    {
         ar:"120",
         id:"F",
         img:"./Kepek/feherKabatF.jpg",
         nev:"Fehér férfi kabát"
     },
-    adat9={
+    {
         ar:"30",
         id:"F",
         img:"./Kepek/feketefelsoF.jpg",
         nev:"Fekete férfi felső"
     },
-    adat10={
+    {
         ar:"45",
         id:"F",
         img:"./Kepek/kekfelsoF.jpg",
         nev:"Kék férfi felső"
     },
-    adat11={
-        ar:"500",
+    {
+        ar:"250",
         id:"F",
         img:"./Kepek/leatherJacketF.jpeg",
         nev:"Fekete bőrkabát"
     },
-    adat12={
+    {
         ar:"25",
         id:"F",
         img:"./Kepek/szurkeoltonyF.jpg",
@@ -107,114 +107,262 @@ let tomb=[
         img:"./Kepek/sportTaskaK.jpg",
         nev:"Férfi sporttáska"
     },
-    adat19={
+    {
         ar:"70",
         id:"R",
         img:"./Kepek/barnaBorcipoR.jpg",
         nev:"Bana férfi bőrcipő"
     },
-    adat20={
+    {
         ar:"60",
         id:"R",
         img:"./Kepek/feketeCipoR.jpg",
         nev:"Fekete női cipő"
     },
-    adat21={
+    {
         ar:"90",
         id:"R",
         img:"./Kepek/feketecsizmaR.jpg",
         nev:"Fekete Férfi Csizma"
     },
-    adat22={
+    {
         ar:"15",
         id:"R",
         img:"./Kepek/feketeKesztyuR.jpg",
         nev:"Fekete téli kesztyű"
     },
-    adat23={
+    {
         ar:"100",
         id:"R",
         img:"./Kepek/feketeNőiCsizmaR.jpg",
         nev:"Fekete Női csizma"
     },
-    adat24={
+    {
         ar:"75",
         id:"R",
         img:"./Kepek/keksportcipoR.jpg",
         nev:"Kék sportcipő"
     },
-    adat25={
+    {
         ar:"30",
         id:"C",
         img:"./Kepek/farmerekC.jpg",
         nev:"Farmer nadrágok választható színben"
     },
-    adat26={
+    {
         ar:"60",
         id:"C",
         img:"./Kepek/ingekC.jpg",
         nev:"Ingek választható színben"
     },
-    adat27={
+    {
         ar:"90",
         id:"C",
         img:"./Kepek/polokC.jpg",
         nev:"Pólók választható színben"
     },
-    adat28={
+    {
         ar:"15",
         id:"C",
         img:"./Kepek/pulcsikC.jpg",
         nev:"Pulóverek választható színben"
     },
-    adat29={
+    {
         ar:"100",
         id:"C",
         img:"./Kepek/sapiC.jpg",
         nev:"Baseball sapkák több színben"
     },
-    adat30={
+    {
         ar:"75",
         id:"C",
         img:"./Kepek/sportcipokC.jpg",
         nev:"Sportcipők több színben"
         
     },
-    adat31={
+    {
         ar:"30",
         id:"C",
         img:"./Kepek/feherNaciC.jpg",
         nev:"Fehér farmer nadrágok"
     },
-    adat32={
+    {
         ar:"60",
         id:"C",
         img:"./Kepek/feketeIngekC.jpg",
         nev:"Fekete ingek"
     },
-    adat33={
+    {
         ar:"90",
         id:"C",
         img:"./Kepek/feherPolokC.jpg",
         nev:"Fehér pólók"
     },
-    adat34={
+    {
         ar:"15",
         id:"C",
         img:"./Kepek/gatyaC.jpg",
         nev:"Fehérneműk több színben"
     },
-    adat35={
+    {
         ar:"10",
         id:"C",
         img:"./Kepek/kesztyuC.jpg",
         nev:"Munkás kesztyűk több színben"
     },
-    adat36={
+    {
         ar:"5",
         id:"C",
         img:"./Kepek/zokciC.jpg",
         nev:"Zoknik több színben"
+        
+    },
+    {
+        ar:"30",
+        id:"N",
+        img:"./Kepek/cianNaciN.jpg",
+        nev:"Cián színű nadrág"
+    },
+    {
+        ar:"20",
+        id:"N",
+        img:"./Kepek/cianPoloN.jpg",
+        nev:"Cián színű női póló"
+    },
+    {
+        ar:"20",
+        id:"N",
+        img:"./Kepek/feketeFeherPoloN.jpg",
+        nev:"Fekete fehér női póló"
+    },
+    {
+        ar:"15",
+        id:"N",
+        img:"./Kepek/sargaPoloN.jpg",
+        nev:"Sárga női póló"
+    },
+    {
+        ar:"15",
+        id:"N",
+        img:"./Kepek/zoldFelsoN.jpg",
+        nev:"Zöld Női felső"
+    },
+    {
+        ar:"25",
+        id:"N",
+        img:"./Kepek/pirosNaciN.jpg",
+        nev:"Piros női nadrág"
+        
+    },
+    {
+        ar:"45",
+        id:"F",
+        img:"./Kepek/barnaPulcsiF.jpg",
+        nev:"Barna férfi pulóver"
+    },
+    {
+        ar:"20",
+        id:"F",
+        img:"./Kepek/feketeFeherPoloF.jpg",
+        nev:"Fekete fehér férfi póló"
+    },
+    {
+        ar:"20",
+        id:"F",
+        img:"./Kepek/kekIngF.jpg",
+        nev:"Kék férfi ing"
+    },
+    {
+        ar:"15",
+        id:"F",
+        img:"./Kepek/pirosPoloF.jpg",
+        nev:"Piros férfi póló"
+    },
+    {
+        ar:"35",
+        id:"F",
+        img:"./Kepek/sargaPulcsiF.jpg",
+        nev:"Sárga férfi pulóver"
+    },
+    {
+        ar:"24",
+        id:"F",
+        img:"./Kepek/szurkeNadragF.jpg",
+        nev:"Szürke férfi nadrág"
+        
+    },
+    {
+        ar:"35",
+        id:"R",
+        img:"./Kepek/bezsTaskaR.jpg",
+        nev:"Bézs női táska"
+    },
+    {
+        ar:"20",
+        id:"R",
+        img:"./Kepek/ciganyAsszonytaskaR.jpg",
+        nev:"Kék bőr táska"
+    },
+    {
+        ar:"20",
+        id:"R",
+        img:"./Kepek/ezustTaskaR.jpg",
+        nev:"Ezüst táska"
+    },
+    {
+        ar:"15",
+        id:"R",
+        img:"./Kepek/klumpaR.jpg",
+        nev:"Piros gumicsizma"
+    },
+    {
+        ar:"35",
+        id:"R",
+        img:"./Kepek/pirosTaskaR.jpg",
+        nev:"Piros bőr táska"
+    },
+    {
+        ar:"24",
+        id:"R",
+        img:"./Kepek/vaszonTatyoR.jpg",
+        nev:"Vászon táska"
+        
+    },
+    {
+        ar:"125",
+        id:"K",
+        img:"./Kepek/marioSapiR.jpg",
+        nev:"Super Mario sapi"
+    },
+    {
+        ar:"20",
+        id:"K",
+        img:"./Kepek/luigiSapiR.jpg",
+        nev:"Super Luigi sapi"
+    },
+    {
+        ar:"20",
+        id:"K",
+        img:"./Kepek/noiSportTaskaR.jpg",
+        nev:"Női sport táska"
+    },
+    {
+        ar:"15",
+        id:"K",
+        img:"./Kepek/zeldaNyaklancR.jpg",
+        nev:"The Legend of Zelda nyaklánc"
+    },
+    {
+        ar:"35",
+        id:"K",
+        img:"./Kepek/baseballSapkaR.jpg",
+        nev:"Baseball sapka"
+    },
+    {
+        ar:"24",
+        id:"K",
+        img:"./Kepek/szepSapkaR.jpg",
+        nev:"Nyári sapka"
         
     }
 
