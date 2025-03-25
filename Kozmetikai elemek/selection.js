@@ -290,6 +290,80 @@ let tomb=[
         img:"./Kepek/szurkeNadragF.jpg",
         nev:"Szürke férfi nadrág"
         
+    },
+    {
+        ar:"35",
+        id:"R",
+        img:"./Kepek/bezsTaskaR.jpg",
+        nev:"Bézs női táska"
+    },
+    {
+        ar:"20",
+        id:"R",
+        img:"./Kepek/ciganyAsszonytaskaR.jpg",
+        nev:"Kék bőr táska"
+    },
+    {
+        ar:"20",
+        id:"R",
+        img:"./Kepek/ezustTaskaR.jpg",
+        nev:"Ezüst táska"
+    },
+    {
+        ar:"15",
+        id:"R",
+        img:"./Kepek/klumpaR.jpg",
+        nev:"Piros gumicsizma"
+    },
+    {
+        ar:"35",
+        id:"R",
+        img:"./Kepek/pirosTaskaR.jpg",
+        nev:"Piros bőr táska"
+    },
+    {
+        ar:"24",
+        id:"R",
+        img:"./Kepek/vaszonTatyoR.jpg",
+        nev:"Vászon táska"
+        
+    },
+    {
+        ar:"125",
+        id:"K",
+        img:"./Kepek/marioSapiR.jpg",
+        nev:"Super Mario sapi"
+    },
+    {
+        ar:"20",
+        id:"K",
+        img:"./Kepek/luigiSapiR.jpg",
+        nev:"Super Luigi sapi"
+    },
+    {
+        ar:"20",
+        id:"K",
+        img:"./Kepek/noiSportTaskaR.jpg",
+        nev:"Női sport táska"
+    },
+    {
+        ar:"15",
+        id:"K",
+        img:"./Kepek/zeldaNyaklancR.jpg",
+        nev:"The Legend of Zelda nyaklánc"
+    },
+    {
+        ar:"35",
+        id:"K",
+        img:"./Kepek/baseballSapkaR.jpg",
+        nev:"Baseball sapka"
+    },
+    {
+        ar:"24",
+        id:"K",
+        img:"./Kepek/szepSapkaR.jpg",
+        nev:"Nyári sapka"
+        
     }
 
 ];
