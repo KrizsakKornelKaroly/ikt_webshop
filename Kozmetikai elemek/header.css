@@ -110,9 +110,6 @@ body {
 #mobileGomb{display: none;}
 
 @media screen and (max-width: 820px) {
-  .shopDDtartalom{
-    display: block;
-  }
   #menuOpen {
     display: block;
     position: absolute;
@@ -177,5 +174,18 @@ body {
   }
   .nyilacska{
     display: none !important;
+  }
+  .shopDDtartalom{
+    display: none;
+    position: relative;
+    z-index: auto;
+    box-shadow: none;
+    padding: 5px;
+    top: 0px;
+    background-color:rgb(187, 54, 61);
+  }
+  .shopDDlinkek{
+    color: white !important;
+    text-align: center;
   }
 }
