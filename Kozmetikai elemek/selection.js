@@ -452,3 +452,21 @@ function Atrendezes()
             break;
     }
 }
+function TopTermekek()
+{
+    for(let i=0; i<5;i++)
+    {
+        let randomSzam=Math.floor(Math.random() * 61);
+        let adat=tomb[randomSzam];
+        let topNev=document.querySelectorAll('.kover')[i];
+        topNev.textContent="";
+        topNev.innerHTML="&#8226 "+adat.nev;
+        let topAr=document.querySelectorAll('.topAr')[i];
+        topAr.textContent="";
+        topAr.innerHTML="&nbsp"+"$"+adat.ar;
+        let topKep=document.querySelectorAll('.topKep')[i];
+        topKep.src=adat.img;
+        
+    }
+}
+TopTermekek();
