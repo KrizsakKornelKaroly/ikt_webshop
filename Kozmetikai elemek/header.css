@@ -188,4 +188,7 @@ body {
     color: white !important;
     text-align: center;
   }
+  .shopDD:hover .shopDDtartalom {
+    display: none;
+  }
 }
