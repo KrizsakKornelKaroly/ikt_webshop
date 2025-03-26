@@ -20,7 +20,7 @@ let tomb=[
     {
         ar:"45",
         id:"N",
-        img:"./Kepek/feketeTaskaN.jpg",
+        img:"./Kepek/feketetaskaN.jpg",
         nev:"Fekete női táska"
     },
     {
@@ -32,7 +32,7 @@ let tomb=[
     {
         ar:"25",
         id:"N",
-        img:"./Kepek/nyariRuhaN.jpg",
+        img:"./Kepek/nyariruhaN.jpg",
         nev:"Női nyári ruha"
     },
     {
