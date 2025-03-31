@@ -376,7 +376,7 @@ window.onload = function () {
 
 function KartyaLetrehozas(szurtRuhaBe, betoltott){
     if (betoltott) {
-        for (let i = 1; i < szurtRuhaBe.length; i++) {
+        for (let i = 0; i < szurtRuhaBe.length; i++) {
             let ujKartya = document.createElement("div")
             ujKartya.classList.add("card")
             let kartyaKeptarolo = document.createElement("div")
