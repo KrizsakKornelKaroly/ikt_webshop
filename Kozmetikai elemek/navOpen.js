@@ -24,35 +24,17 @@ function mobileShopOpen(){
         }
     }
 }
+/*
+if(window.innerWidth > 820)
+    {
+        location.reload()
+    }
+*/
 
 setInterval(() => {
     if (window.innerWidth > 820) {
         if (teljesMenu.style.display == "none") {
             teljesMenu.style.display = "block"
         }
-
-        /*
-        ruhaGomb.addEventListener('mouseenter', () => {
-            ruhaKategoriak.style.display = "block"; 
-        });
-        ruhaGomb.addEventListener('mouseleave', () => {
-            ruhaKategoriak.style.display = "none"; 
-        });
-        */
-
-        ruhaGomb.addEventListener('mouseenter', hoverTesting)
-        ruhaGomb.addEventListener('mouseleave', hoverTesting)
-        
     }
 }, 10);
-
-function hoverTesting(){
-    if(ruhaKategoriak.style.display == "block"){
-        ruhaKategoriak.style.display = "none"; 
-    }
-    else{
-        ruhaKategoriak.style.display = "block";
-    }
-}
-
-
