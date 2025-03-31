@@ -16,27 +16,19 @@ main {
     display: none;
   }
   
-  /* Next & previous buttons
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
- Position the "next button" to the right
-  .next {
-    border-radius: 3px 0 0 3px;
-  }*/
-  
+.next,.prev
+    {
+        position: absolute;
+    }   
+
+    .next,.prev
+    {
+        top:55%
+    }
+    .next
+    {   
+        right:10%
+    }
   
   /* Caption text */
   .text {
