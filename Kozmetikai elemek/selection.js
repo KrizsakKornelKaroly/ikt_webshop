@@ -368,8 +368,56 @@ let tomb = [
 
 ];
 
+
+let betoltott = false;
 window.onload = function () {
     Atrendezes();
+}
+
+function KartyaLetrehozas(szurtRuhaBe, betoltott){
+    if (betoltott) {
+        for (let i = 1; i < szurtRuhaBe.length; i++) {
+            let ujKartya = document.createElement("div")
+            ujKartya.classList.add("card")
+            let kartyaKeptarolo = document.createElement("div")
+            kartyaKeptarolo.classList.add("image-container")
+                let kartyaKepElem = document.createElement("img")
+                kartyaKepElem.classList.add("kartyaKep")
+                let kartyaKepOverlay = document.createElement("div")
+                kartyaKepOverlay.classList.add("overlay")
+                    let overlayGombokTarolo = document.createElement("div")
+                    overlayGombokTarolo.classList.add("buttons")
+                        let buttonsIcons = document.createElement("div")
+                        buttonsIcons.classList.add("icons")
+                            let icon1 = document.createElement("button")
+                            icon1.textContent = "❤"
+                            let icon2 = document.createElement("button")
+                            icon2.textContent = "👁"
+                        let addToCart = document.createElement("button")
+                        addToCart.classList.add("add-to-cart")
+                        addToCart.textContent = "Add To Cart"
+            let kartyaDetails = document.createElement("div")
+            kartyaDetails.classList.add("details")
+                kartyaTermeknev = document.createElement("div")
+                kartyaTermeknev.classList.add("title")
+                kartyaAr = document.createElement("div")
+                kartyaAr.classList.add("price")
+    
+    
+                buttonsIcons.appendChild(icon1)
+                buttonsIcons.appendChild(icon2)
+                overlayGombokTarolo.appendChild(buttonsIcons)
+                overlayGombokTarolo.appendChild(addToCart)
+                kartyaKepOverlay.appendChild(overlayGombokTarolo)
+                kartyaKeptarolo.appendChild(kartyaKepElem)
+                kartyaKeptarolo.appendChild(kartyaKepOverlay)
+                kartyaDetails.appendChild(kartyaTermeknev)
+                kartyaDetails.appendChild(kartyaAr)
+                ujKartya.appendChild(kartyaKeptarolo)
+                ujKartya.appendChild(kartyaDetails)
+                document.getElementsByClassName("kartyaksor")[0].appendChild(ujKartya)
+        }
+    }
 }
 
 //N, F, K, R, C
@@ -402,6 +450,12 @@ function RendezSorrend(valaszottoldal, irany) {
         }
     }
 
+    if (!betoltott) {
+        KartyaLetrehozas(szurtRuhak, true)
+        betoltott = true
+    }
+    
+
     switch (irany) {
         case "nov":
             szurtRuhak.sort((a, b) => a.ar - b.ar)
@@ -416,67 +470,8 @@ function RendezSorrend(valaszottoldal, irany) {
             break;
     }
 
-    /*
-    szulo div: .kartyaksor
-<div class="salejeltar">
-                    <div class="salejel">
-                        <P>Sale!</P>
-                    </div>
-                    <div class="card">
-
-                        <div class="image-container">
-                            <img class="kartyaKep" alt="Product Image">
-                            <div class="overlay">
-                                <div class="buttons">
-                                    <div class="icons">
-                                        <button>❤</button>
-                                        <button>👁</button>
-                                    </div>
-                                    <button class="add-to-cart">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="title">Collar T-Shirt</div>
-                            <div class="price">$100.00</del></div>
-                        </div>
-                    </div>
-                </div>
-*/
-
-
-
-
     let j = 0;
-    for (let i = 0; i < tomb.length; i++) {
-        let ujKartya = document.createElement("div").classList("card")
-            let kartyaKeptarolo = document.createElement("div").classList("image-container")
-                let kartyaKepElem = document.createElement("img").classList("kartyaKep")
-                let kartyaKepOverlay = document.createElement("div").classList("overlay")
-                    let overlayGombokTarolo = document.createElement("div").classList("buttons")
-                        let buttonsIcons = document.createElement("div").classList("icons")
-                            let icon1 = document.createElement("button").textContent("❤")
-                            let icon2 = document.createElement("button").textContent("👁")
-                        let addToCart = document.createElement("button").classList("add-to-cart").textContent("Add To Cart")
-            let kartyaDetails = document.createElement("div").classList("details")
-                kartyaTermeknev = document.createElement("div").classList("title")
-                kartyaAr = document.createElement("div").classList("price")
-                        
-        buttonsIcons.appendChild(icon1)
-        buttonsIcons.appendChild(icon2)
-        overlayGombokTarolo.appendChild(buttonsIcons)
-        overlayGombokTarolo.appendChild(addToCart)
-        kartyaKepOverlay.appendChild(overlayGombokTarolo)
-        kartyaKeptarolo.appendChild(kartyaKepElem)
-        kartyaKeptarolo.appendChild(kartyaKepOverlay)
-        kartyaDetails.appendChild(kartyaTermeknev)
-        kartyaDetails.appendChild(kartyaAr)
-        ujKartya.appendChild(kartyaKeptarolo)
-        ujKartya.appendChild(kartyaDetails)
-        document.getElementsByClassName("kartyaksor")[0].appendChild(ujKartya)
-        
-        
-
+    for (let i = 0; i < tomb.length; i++) {                        
         let kep = document.querySelectorAll('.kartyaKep')[j];
         kep.src = szurtRuhak[i].img;
         kep.title = szurtRuhak[i].nev;
