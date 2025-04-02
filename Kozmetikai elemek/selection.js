@@ -481,6 +481,8 @@ function RendezSorrend(valaszottoldal, irany) {
         let titleK = document.querySelectorAll('.title')[j];
         titleK.textContent = "";
         titleK.innerHTML = szurtRuhak[i].nev;
+        let termekSzam=document.querySelectorAll('.termekSzam')[0];
+        termekSzam.innerHTML=szurtRuhak.length;
         j++;
     }
 
