@@ -82,8 +82,6 @@
                 </div>
               
                  
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
             </div>
               <div style="text-align:center">
@@ -176,7 +174,9 @@
     <script>
         let slideIndex = 0;
         showSlides();
-        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
         function showSlides() {
           let i;
           let slides = document.getElementsByClassName("mySlides");
@@ -186,7 +186,7 @@
           slideIndex++;
           if (slideIndex > slides.length) {slideIndex = 1}
           slides[slideIndex-1].style.display = "block";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
         </script>
 </body>
