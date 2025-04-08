@@ -259,6 +259,16 @@ input {
     font-size: medium;
 }
 
+.komment{
+    background-color:rgb(100, 123, 171);
+    height: 100px;
+    color: white;
+    margin-top: 25px;
+}
+.nevSzoveg{
+    font-weight: normal;
+}
+
 @media screen and (max-width:920px) {
     .card {
         margin: 5px;
