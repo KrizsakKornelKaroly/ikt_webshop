@@ -25,10 +25,13 @@ function Adatfelvetel()
         let tarolo=document.createElement("div");
         let nevSzoveg=document.createElement("h3");
         nevSzoveg.innerHTML=adat.vnev+" "+adat.kernev;
+        let uzenetSzoveg=document.createElement("p");
+        uzenetSzoveg.innerText=adat.megjegyzes;
         nevSzoveg.classList.add("nevSzoveg");
         tarolo.classList.add("komment");
         let panel=document.getElementById("formos");
         tarolo.appendChild(nevSzoveg);
+        tarolo.appendChild(uzenetSzoveg);
         panel.appendChild(tarolo);
         
         
