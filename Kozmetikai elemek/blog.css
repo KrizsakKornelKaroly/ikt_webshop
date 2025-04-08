@@ -299,9 +299,6 @@ footer {
     #blogresz {
         width: 100%;
     }
-    .bejegyzes{
-        flex-direction: column;
-    }
     .blogszoveg{
         width: 90%;
         margin: 0 auto;
@@ -309,6 +306,21 @@ footer {
     .blogkep{
         margin:0 auto;
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #blogresz{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .bejegyzes{
+        width: 100%;
+    }
+    .blogkep{
+        margin: 0 auto;
+        width: auto;
     }
 
 }
