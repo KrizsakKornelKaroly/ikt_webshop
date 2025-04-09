@@ -23,14 +23,22 @@ function Adatfelvetel()
         "\nMegjegyzés: "+adatok[adatok.length-1].megjegyzes)
 
         let tarolo=document.createElement("div");
+        let nevEsProfil=document.createElement("div");
         let nevSzoveg=document.createElement("h3");
-        nevSzoveg.innerHTML=adat.vnev+" "+adat.kernev;
         let uzenetSzoveg=document.createElement("p");
+        let pfp=document.createElement("img");
+        pfp.src="./Kepek/profilePic.png";
+        nevSzoveg.innerHTML=adat.vnev+" "+adat.kernev;
         uzenetSzoveg.innerText=adat.megjegyzes;
         nevSzoveg.classList.add("nevSzoveg");
+        uzenetSzoveg.classList.add("uzenetSzoveg");
         tarolo.classList.add("komment");
+        pfp.classList.add("profilkep");
+        nevEsProfil.classList.add("nevEsProfil");
         let panel=document.getElementById("formos");
-        tarolo.appendChild(nevSzoveg);
+        nevEsProfil.appendChild(nevSzoveg);
+        nevEsProfil.appendChild(pfp);
+        tarolo.appendChild(nevEsProfil);
         tarolo.appendChild(uzenetSzoveg);
         panel.appendChild(tarolo);
         

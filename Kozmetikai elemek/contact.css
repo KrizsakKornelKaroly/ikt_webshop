@@ -261,12 +261,32 @@ input {
 
 .komment{
     background-color:rgb(100, 123, 171);
-    height: 100px;
+    min-height: 100px;
     color: white;
     margin-top: 25px;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
 }
 .nevSzoveg{
     font-weight: normal;
+    font-size: x-large;
+    margin: 20px;
+}
+.uzenetSzoveg{
+    font-size: large;
+    text-align: justify;
+    margin: 20px;
+}
+.profilkep{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+.nevEsProfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media screen and (max-width:920px) {
