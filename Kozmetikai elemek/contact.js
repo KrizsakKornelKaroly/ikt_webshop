@@ -1,3 +1,5 @@
+
+
 let adatok=[];
 function Adatfelvetel()
 {
@@ -14,6 +16,7 @@ function Adatfelvetel()
     if(adat.email!="" && adat.email.includes("@")&& adat.vnev!="" && adat.kernev!="" &&adat.telo!="" && adat.telo.includes("+") && adat.orszag!="" && adat.regio!=""&& adat.megjegyzes!="" )
     {
         adatok.push(adat);
+        localStorage.setItem("adatos",adat);
         alert("Adatok sikeresen felvéve. Köszönjük a visszajelzésed! \nNév: "
         +adatok[adatok.length-1].vnev+" "+adatok[adatok.length-1].kernev+
         "\nTelefon: "+adatok[adatok.length-1].telo+
@@ -31,12 +34,12 @@ function Adatfelvetel()
         pfp.src="./Kepek/profilePic.png";
         nevSzoveg.innerHTML=adat.vnev+" "+adat.kernev;
         uzenetSzoveg.innerText=adat.megjegyzes;
-        datum.innerText=new Date().getFullYear();
+        datum.innerText=new Date().toDateString();
         nevSzoveg.classList.add("nevSzoveg");
         uzenetSzoveg.classList.add("uzenetSzoveg");
         tarolo.classList.add("komment");
         pfp.classList.add("profilkep");
-        datum.classList.add("datum");
+        datum.classList.add("Kdatum");
         nevEsProfil.classList.add("nevEsProfil");
         let panel=document.getElementById("formos");
         nevEsProfil.appendChild(nevSzoveg);
@@ -45,7 +48,6 @@ function Adatfelvetel()
         tarolo.appendChild(uzenetSzoveg);
         tarolo.appendChild(datum);
         panel.appendChild(tarolo);
-        
         
 
         

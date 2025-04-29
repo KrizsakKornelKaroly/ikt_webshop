@@ -271,6 +271,7 @@ input {
     font-weight: normal;
     font-size: x-large;
     margin: 20px;
+    
 }
 .uzenetSzoveg{
     font-size: large;
@@ -287,6 +288,9 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.Kdatum{
+    margin: 20px;
 }
 
 @media screen and (max-width:920px) {
