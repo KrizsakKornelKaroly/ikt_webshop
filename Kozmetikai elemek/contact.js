@@ -27,19 +27,23 @@ function Adatfelvetel()
         let nevSzoveg=document.createElement("h3");
         let uzenetSzoveg=document.createElement("p");
         let pfp=document.createElement("img");
+        let datum=document.createElement("p");
         pfp.src="./Kepek/profilePic.png";
         nevSzoveg.innerHTML=adat.vnev+" "+adat.kernev;
         uzenetSzoveg.innerText=adat.megjegyzes;
+        datum.innerText=new Date().getFullYear();
         nevSzoveg.classList.add("nevSzoveg");
         uzenetSzoveg.classList.add("uzenetSzoveg");
         tarolo.classList.add("komment");
         pfp.classList.add("profilkep");
+        datum.classList.add("datum");
         nevEsProfil.classList.add("nevEsProfil");
         let panel=document.getElementById("formos");
         nevEsProfil.appendChild(nevSzoveg);
         nevEsProfil.appendChild(pfp);
         tarolo.appendChild(nevEsProfil);
         tarolo.appendChild(uzenetSzoveg);
+        tarolo.appendChild(datum);
         panel.appendChild(tarolo);
         
         
