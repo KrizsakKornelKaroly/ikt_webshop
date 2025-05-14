@@ -48,7 +48,7 @@ function Adatfelvetel()
         tarolo.appendChild(uzenetSzoveg);
         tarolo.appendChild(datum);
         panel.appendChild(tarolo);
-        
+        alert(localStorage.getItem("nev"))
 
         
 
@@ -60,7 +60,6 @@ function Adatfelvetel()
         alert("Probléma akadt az adatokkal. Próbálja újra");
 
     }
-
 
         
     
