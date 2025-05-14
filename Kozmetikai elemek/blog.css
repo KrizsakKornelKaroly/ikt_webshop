@@ -243,8 +243,6 @@ footer {
 .popupBg{
     display: block;
     position: fixed;
-    bottom: 25%;
-    left: 25%;
     margin: 0 auto;
     background-color: white;
     width: 50%;
@@ -267,30 +265,35 @@ footer {
     background-color: lightgray;
     display: flex;
     position: fixed;
-    bottom: 25%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     width: 70%;
     z-index: 5;
     border-radius: 25px;
     padding: 20px;
+    height: 90%;
 }
 .popupCloseBtn{
     padding: 10px;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: lightgray;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
     border: none;
     font-size: x-large;
+    z-index: 5;
 }
 
 .popupBaloldal{
-    margin-right: 10px;
+    margin-right: 25px;
     width: 30%;
+    height: 450px;
     background-color: white;
     border-radius: 25px;
     padding-bottom: 25px;
+    align-self: center;
 }
 .popupKepLeft{
     width: 100%;
@@ -320,20 +323,29 @@ footer {
     border-radius: 10px;
     margin: 5px auto;
     display: block;
+    margin-top: 40px;
 }
 
 .popupJobboldal{
     width: 70%;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .popupCimRight{
     text-align: center;
-    margin-top: 0px;
+    margin-top: 8px;
 }
 .popupSzovegRight{
     text-align: justify;
     text-indent: 20px;
     line-height: 25px;
+    overflow: scroll;
+    height: 90%;
+    padding: 10px;
+    overflow-x: hidden;
 }
 
 
