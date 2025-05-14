@@ -66,89 +66,7 @@
     </div>
         <h1 style="display: block; padding-left: 10%;">Üdvözöljük az oldalon!</h1>
     <main>
-            <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                  <img src="./Kepek/sliderkep1.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="./Kepek/sliderkep2.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="./Kepek/terkep.png" style="width:100%">
-                </div>
-              
-                 
-            
-            </div>
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-        
-            <h1>Kiemelt termékeink, kedvezményeink</h1>
-            <div class="kartyaksor">
-                <div class="salejeltar">
-                    <div class="card">
-                        <div class="image-container">
-                            <img src="./Kepek/rozsaTaskaK.jpg" alt="Product Image">
-                            <div class="overlay">
-                                <div class="buttons">
-                                    <div class="icons">
-                                        <button>❤</button>
-                                        <button>👁</button>
-                                    </div>
-                                    <button class="add-to-cart">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="title">Rózsaszín táska</div>
-                            <div class="price" style="font-weight: bold;"><del style="color: grey;">$100.00</del> $50.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-container">
-                        <img src="./Kepek/keresztnyaklK.jpg" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
-                                </div>
-                                <button class="add-to-cart">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Kereszt nyaklánc</div>
-                        <div class="price">$15.00</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image-container">
-                        <img src="./Kepek/farmerekC.jpg" alt="Product Image">
-                        <div class="overlay">
-                            <div class="buttons">
-                                <div class="icons">
-                                    <button>❤</button>
-                                    <button>👁</button>
-                                </div>
-                                <button class="add-to-cart">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="title">Farmerek több színben</div>
-                        <div class="price">$32.00</div>
-                    </div>
-                </div>
-            </div>
     </main>
     <footer>
         <div class="footerelem">
@@ -170,24 +88,5 @@
             <p class="footerp"><img src="./Kepek/wallet.png" alt="Pénztárca ikon" class="footerikon">100% money-back guarantee</p>
         </div>
     </footer>
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-          slides[slideIndex-1].style.display = "block";
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-        </script>
 </body>
 </html>
