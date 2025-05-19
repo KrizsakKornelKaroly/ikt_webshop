@@ -463,6 +463,12 @@ function RendezSorrend(valaszottoldal, irany) {
         case "csok":
             szurtRuhak.sort((a, b) => b.ar - a.ar)
             break;
+        case "abcSor":
+            szurtRuhak.sort((a, b) => a.nev.localeCompare(b.nev, 'hu'))
+            break;
+        case "abcRev":
+            szurtRuhak.sort((a, b) => b.nev.localeCompare(a.nev, 'hu'))
+            break;
         case "alap":
             break;
         default:
@@ -499,6 +505,12 @@ function Atrendezes() {
             break
         case "alap":
             RendezSorrend(document.title, "alap")
+            break;
+        case "abcIncrease":
+            RendezSorrend(document.title, "abcSor")
+            break;
+        case "abcReverse":
+            RendezSorrend(document.title, "abcRev")
             break;
         default:
             alert("Hiba történt a szűrés közben!")
