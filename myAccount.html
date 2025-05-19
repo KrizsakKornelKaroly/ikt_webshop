@@ -65,9 +65,54 @@
         <a href="" class="rootNav" style="margin-left: 0px;">Home</a>
     </div>
         <h1 style="display: block; padding-left: 10%;">Üdvözöljük az oldalon!</h1>
-    <main>
-
-    </main>
+        <main style="max-width: 400px; margin: 40px auto; font-family: sans-serif; height:420px">
+            <h2 style="margin-bottom: 20px;">Bejelentkezés</h2>
+          
+            <label for="username" style="display: block; margin-bottom: 6px;">Felhasználónév</label>
+            <input type="text" id="username" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+          
+            <label for="password" style="display: block; margin-bottom: 6px;">Jelszó</label>
+            <input type="password" id="password" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+          
+            <button id="gombos" onclick="login()" style="width: 100%; background-color: #ff4b4b; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+              Bejelentkezés
+            </button>
+          
+            <div id="message" style="margin-top: 20px; display: none; padding: 12px; border-radius: 4px;"></div>
+          
+            <script>
+                function bejelOldal()
+                {
+                    window.open("https://telex.hu/tamogatas");
+                }
+              function login() {
+                const username = document.getElementById("username").value.trim();
+                const password = document.getElementById("password").value.trim();
+                const messageBox = document.getElementById("message");
+          
+                // Teszt jelszó és felhasználónév (demo célra)
+                const correctUsername = "felhasznalo";
+                const correctPassword = "titok123";
+          
+                if (username === correctUsername && password === correctPassword) {
+                    let gombos=document.getElementById("gombos");
+                    gombos.setAttribute('disabled','')
+                  messageBox.style.display = "block";
+                  messageBox.style.backgroundColor = "#d4edda";
+                  messageBox.style.color = "#155724";
+                  messageBox.innerText = "Sikeres bejelentkezés!";
+                  setTimeout(bejelOldal,2000);
+                  
+                  
+                } else {
+                  messageBox.style.display = "block";
+                  messageBox.style.backgroundColor = "#f8d7da";
+                  messageBox.style.color = "#721c24";
+                  messageBox.innerText = "Helytelen felhasználónév vagy jelszó.";
+                }
+              }
+            </script>
+          </main>
     <footer>
         <div class="footerelem">
             <h3>Rólunk</h3>
