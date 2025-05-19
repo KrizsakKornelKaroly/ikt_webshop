@@ -200,7 +200,8 @@ footer {
 }
 
 .bejegyzes {
-    width: 45%;
+    width: 350px;
+    max-height: 550px;
     background-color: #eae8e5;
     border-radius: 30px;
     text-align: justify;
@@ -280,7 +281,8 @@ footer {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: transparent;
+    background-color: lightgrey;
+    border-radius: 25px;
     border: none;
     font-size: x-large;
     z-index: 5;
@@ -288,12 +290,13 @@ footer {
 
 .popupBaloldal{
     margin-right: 25px;
-    width: 30%;
-    height: 450px;
+    width: 350px;
+    height: 500px;
     background-color: white;
     border-radius: 25px;
     padding-bottom: 25px;
     align-self: center;
+    position: relative;
 }
 .popupKepLeft{
     width: 100%;
@@ -323,15 +326,19 @@ footer {
     border-radius: 10px;
     margin: 5px auto;
     display: block;
-    margin-top: 40px;
+    margin-top: 25px;
 }
-
+.atcGombLeft:hover{
+    background-color: white;
+    color: black;
+    
+}
 .popupJobboldal{
     width: 70%;
     position: relative;
-    height: 100%;
     background-color: white;
     border-radius: 10px;
+    height: 100%;
 }
 
 .popupCimRight{
@@ -339,11 +346,12 @@ footer {
     margin-top: 8px;
 }
 .popupSzovegRight{
+    position: relative;
     text-align: justify;
     text-indent: 20px;
     line-height: 25px;
     overflow: scroll;
-    height: 90%;
+    height: 85%;
     padding: 10px;
     overflow-x: hidden;
 }
@@ -356,6 +364,29 @@ footer {
 }
 
 @media screen and (max-width:920px) {
+    .popupCont{
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .popupBaloldal{
+        width: 80%;
+        margin-right: 0px;
+        position: relative;
+        height: 100%;
+        padding-bottom: 150px;
+    }
+    .popupJobboldal{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    .popupSzovegRight{
+        height: 80%
+    }
+    .atcGombLeft{
+        margin-top: 5px;
+    }
     .card {
         margin: 5px;
     }
@@ -401,7 +432,7 @@ footer {
     #jobboldal {
         margin: auto;
         padding: 1px;
-        width: 100%;
+        width: 50%;
         border-radius: 25px;
     }
 
