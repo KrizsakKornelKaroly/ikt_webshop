@@ -1,6 +1,5 @@
 let adatok = [];
 
-// OLDAL BETÖLTÉSEKOR KIOLVASSA A MENTETT KOMMENTEKET
 window.onload = function () {
     const mentett = localStorage.getItem("adatos");
     if (mentett) {
@@ -19,7 +18,7 @@ function Adatfelvetel() {
         regio: document.getElementById("regio").value,
         nem: document.getElementById("nem").value,
         megjegyzes: document.getElementById("megjegyzes").value,
-        datum: new Date().toDateString()
+        datum: new Date().toDateString()+" "+new Date().getHours()+":"+new Date().getMinutes()
     }
 
     if (
@@ -30,7 +29,7 @@ function Adatfelvetel() {
         adat.megjegyzes != ""
     ) {
         adatok.push(adat);
-        localStorage.setItem("adatos", JSON.stringify(adatok)); // Tömb mentése
+        localStorage.setItem("adatos", JSON.stringify(adatok)); 
 
         alert("Adatok sikeresen felvéve. Köszönjük a visszajelzésed! \nNév: "
             + adat.vnev + " " + adat.kernev +

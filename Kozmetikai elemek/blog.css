@@ -41,6 +41,7 @@ footer {
 }
 #jobboldal {
     width: 25%;
+    height: fit-content;
     display: flex;
     background-color: #eae8e5;
     min-width: 250px;
