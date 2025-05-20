@@ -3,366 +3,426 @@ let tomb = [
         ar: "20",
         id: "N",
         img: "./Kepek/lilaPoloN.jpg",
-        nev: "Lila Póló"
+        nev: "Lila Póló",
+        sale:true
     },
     {
         ar: "200",
         id: "N",
         img: "./Kepek/szormeKabatN.jpg",
-        nev: "Szőrme kabát"
+        nev: "Szőrme kabát",
+        sale:false
     },
     {
         ar: "10",
         id: "N",
         img: "./Kepek/feketePoloN.jpg",
-        nev: "Fekete Női Póló"
+        nev: "Fekete Női Póló",
+        sale:false
     },
     {
         ar: "45",
         id: "N",
         img: "./Kepek/feketetaskaN.jpg",
-        nev: "Fekete női táska"
+        nev: "Fekete női táska",
+        sale:false
     },
     {
         ar: "1000",
         id: "N",
         img: "./Kepek/nyaklancN.jpg",
-        nev: "Női gyémánt nyaklánc"
+        nev: "Női gyémánt nyaklánc",
+        sale:false
     },
     {
         ar: "25",
         id: "N",
         img: "./Kepek/nyariruhaN.jpg",
-        nev: "Női nyári ruha"
+        nev: "Női nyári ruha",
+        sale:false
     },
     {
         ar: "25",
         id: "F",
         img: "./Kepek/feherFelsoF.jpg",
-        nev: "Fehér férfi felső"
+        nev: "Fehér férfi felső",
+        sale:false
     },
     {
         ar: "120",
         id: "F",
         img: "./Kepek/feherKabatF.jpg",
-        nev: "Fehér férfi kabát"
+        nev: "Fehér férfi kabát",
+        sale:false
     },
     {
         ar: "30",
         id: "F",
         img: "./Kepek/feketefelsoF.jpg",
-        nev: "Fekete férfi felső"
+        nev: "Fekete férfi felső",
+        sale:false
     },
     {
         ar: "45",
         id: "F",
         img: "./Kepek/kekfelsoF.jpg",
-        nev: "Kék férfi felső"
+        nev: "Kék férfi felső",
+        sale:true
     },
     {
         ar: "250",
         id: "F",
         img: "./Kepek/leatherJacketF.jpeg",
-        nev: "Fekete bőrkabát"
+        nev: "Fekete bőrkabát",
+        sale:false
     },
     {
         ar: "25",
         id: "F",
         img: "./Kepek/szurkeoltonyF.jpg",
-        nev: "Szürke férfi öltöny"
+        nev: "Szürke férfi öltöny",
+        sale:false
     },
     {
         ar: "60",
         id: "K",
         img: "./Kepek/barnaTaskaK.jpg",
-        nev: "Barna férfi hátitáska"
+        nev: "Barna férfi hátitáska",
+        sale:false
     },
     {
         ar: "13",
         id: "K",
         img: "./Kepek/borosUvegK.jpg",
-        nev: "Fekete üvegpalack"
+        nev: "Fekete üvegpalack",
+        sale:false
     },
     {
         ar: "50",
         id: "K",
         img: "./Kepek/keresztnyaklK.jpg",
-        nev: "Kereszt nyaklánc"
+        nev: "Kereszt nyaklánc",
+        sale:true
     },
     {
         ar: "45",
         id: "K",
         img: "./Kepek/rozsaTaskaK.jpg",
-        nev: "Rózsaszín hátitáska"
+        nev: "Rózsaszín hátitáska",
+        sale:false
     },
     {
         ar: "12",
         id: "K",
         img: "./Kepek/rozsaUvegK.jpg",
-        nev: "Rózsaszín üvegpalack"
+        nev: "Rózsaszín üvegpalack",
+        sale:false
     },
     {
         ar: "35",
         id: "K",
         img: "./Kepek/sportTaskaK.jpg",
-        nev: "Férfi sporttáska"
+        nev: "Férfi sporttáska",
+        sale:false
     },
     {
         ar: "70",
         id: "R",
         img: "./Kepek/barnaBorcipoR.jpg",
-        nev: "Bana férfi bőrcipő"
+        nev: "Bana férfi bőrcipő",
+        sale:false
     },
     {
         ar: "60",
         id: "R",
         img: "./Kepek/feketeCipoR.jpg",
-        nev: "Fekete női cipő"
+        nev: "Fekete női cipő",
+        sale:true
     },
     {
         ar: "90",
         id: "R",
         img: "./Kepek/feketecsizmaR.jpg",
-        nev: "Fekete Férfi Csizma"
+        nev: "Fekete Férfi Csizma",
+        sale:false
     },
     {
         ar: "15",
         id: "R",
         img: "./Kepek/feketeKesztyuR.jpg",
-        nev: "Fekete téli kesztyű"
+        nev: "Fekete téli kesztyű",
+        sale:false
     },
     {
         ar: "100",
         id: "R",
         img: "./Kepek/feketeNőiCsizmaR.jpg",
-        nev: "Fekete Női csizma"
+        nev: "Fekete Női csizma",
+        sale:false
     },
     {
         ar: "75",
         id: "R",
         img: "./Kepek/keksportcipoR.jpg",
-        nev: "Kék sportcipő"
+        nev: "Kék sportcipő",
+        sale:false
     },
     {
         ar: "30",
         id: "C",
         img: "./Kepek/farmerekC.jpg",
-        nev: "Farmer nadrágok választható színben"
+        nev: "Farmer nadrágok választható színben",
+        sale:false
     },
     {
         ar: "60",
         id: "C",
         img: "./Kepek/ingekC.jpg",
-        nev: "Ingek választható színben"
+        nev: "Ingek választható színben",
+        sale:false
     },
     {
         ar: "90",
         id: "C",
         img: "./Kepek/polokC.jpg",
-        nev: "Pólók választható színben"
+        nev: "Pólók választható színben",
+        sale:false
     },
     {
         ar: "15",
         id: "C",
         img: "./Kepek/pulcsikC.jpg",
-        nev: "Pulóverek választható színben"
+        nev: "Pulóverek választható színben",
+        sale:false
     },
     {
         ar: "100",
         id: "C",
         img: "./Kepek/sapiC.jpg",
-        nev: "Baseball sapkák több színben"
+        nev: "Baseball sapkák több színben",
+        sale:true
     },
     {
         ar: "75",
         id: "C",
         img: "./Kepek/sportcipokC.jpg",
-        nev: "Sportcipők több színben"
+        nev: "Sportcipők több színben",
+        sale:false
 
     },
     {
         ar: "30",
         id: "C",
         img: "./Kepek/feherNaciC.jpg",
-        nev: "Fehér farmer nadrágok"
+        nev: "Fehér farmer nadrágok",
+        sale:false
     },
     {
         ar: "60",
         id: "C",
         img: "./Kepek/feketeIngekC.jpg",
-        nev: "Fekete ingek"
+        nev: "Fekete ingek",
+        sale:false
     },
     {
         ar: "90",
         id: "C",
         img: "./Kepek/feherPolokC.jpg",
-        nev: "Fehér pólók"
+        nev: "Fehér pólók",
+        sale:false
     },
     {
         ar: "15",
         id: "C",
         img: "./Kepek/gatyaC.jpg",
-        nev: "Fehérneműk több színben"
+        nev: "Fehérneműk több színben",
+        sale:false
     },
     {
         ar: "10",
         id: "C",
         img: "./Kepek/kesztyuC.jpg",
-        nev: "Munkás kesztyűk több színben"
+        nev: "Munkás kesztyűk több színben",
+        sale:false
     },
     {
         ar: "5",
         id: "C",
         img: "./Kepek/zokciC.jpg",
-        nev: "Zoknik több színben"
+        nev: "Zoknik több színben",
+        sale:false
 
     },
     {
         ar: "30",
         id: "N",
         img: "./Kepek/cianNaciN.jpg",
-        nev: "Cián színű nadrág"
+        nev: "Cián színű nadrág",
+        sale:false
     },
     {
         ar: "20",
         id: "N",
         img: "./Kepek/cianPoloN.jpg",
-        nev: "Cián színű női póló"
+        nev: "Cián színű női póló",
+        sale:false
     },
     {
         ar: "20",
         id: "N",
         img: "./Kepek/feketeFeherPoloN.jpg",
-        nev: "Fekete fehér női póló"
+        nev: "Fekete fehér női póló",
+        sale:false
     },
     {
         ar: "15",
         id: "N",
         img: "./Kepek/sargaPoloN.jpg",
-        nev: "Sárga női póló"
+        nev: "Sárga női póló",
+        sale:false
     },
     {
         ar: "15",
         id: "N",
         img: "./Kepek/zoldFelsoN.jpg",
-        nev: "Zöld Női felső"
+        nev: "Zöld Női felső",
+        sale:false
     },
     {
         ar: "25",
         id: "N",
         img: "./Kepek/pirosNaciN.jpg",
-        nev: "Piros női nadrág"
+        nev: "Piros női nadrág",
+        sale:false
 
     },
     {
         ar: "45",
         id: "F",
         img: "./Kepek/barnaPulcsiF.jpg",
-        nev: "Barna férfi pulóver"
+        nev: "Barna férfi pulóver",
+        sale:false
     },
     {
         ar: "20",
         id: "F",
         img: "./Kepek/feketeFeherPoloF.jpg",
-        nev: "Fekete fehér férfi póló"
+        nev: "Fekete fehér férfi póló",
+        sale:false
     },
     {
         ar: "20",
         id: "F",
         img: "./Kepek/kekIngF.jpg",
-        nev: "Kék férfi ing"
+        nev: "Kék férfi ing",
+        sale:true
     },
     {
         ar: "15",
         id: "F",
         img: "./Kepek/pirosPoloF.jpg",
-        nev: "Piros férfi póló"
+        nev: "Piros férfi póló",
+        sale:false
     },
     {
         ar: "35",
         id: "F",
         img: "./Kepek/sargaPulcsiF.jpg",
-        nev: "Sárga férfi pulóver"
+        nev: "Sárga férfi pulóver",
+        sale:false
     },
     {
         ar: "24",
         id: "F",
         img: "./Kepek/szurkeNadragF.jpg",
-        nev: "Szürke férfi nadrág"
+        nev: "Szürke férfi nadrág",
+        sale:false
 
     },
     {
         ar: "35",
         id: "R",
         img: "./Kepek/bezsTaskaR.jpg",
-        nev: "Bézs női táska"
+        nev: "Bézs női táska",
+        sale:false
     },
     {
         ar: "20",
         id: "R",
         img: "./Kepek/ciganyAsszonytaskaR.jpg",
-        nev: "Kék bőr táska"
+        nev: "Kék bőr táska",
+        sale:false
     },
     {
         ar: "20",
         id: "R",
         img: "./Kepek/ezustTaskaR.jpg",
-        nev: "Ezüst táska"
+        nev: "Ezüst táska",
+        sale:false
     },
     {
         ar: "15",
         id: "R",
         img: "./Kepek/klumpaR.jpg",
-        nev: "Piros gumicsizma"
+        nev: "Piros gumicsizma",
+        sale:false
     },
     {
         ar: "35",
         id: "R",
         img: "./Kepek/pirosTaskaR.jpg",
-        nev: "Piros bőr táska"
+        nev: "Piros bőr táska",
+        sale:false
     },
     {
         ar: "24",
         id: "R",
         img: "./Kepek/vaszonTatyoR.jpg",
-        nev: "Vászon táska"
+        nev: "Vászon táska",
+        sale:false
 
     },
     {
         ar: "125",
         id: "K",
         img: "./Kepek/marioSapiR.jpg",
-        nev: "Super Mario sapi"
+        nev: "Super Mario sapi",
+        sale:false
     },
     {
         ar: "20",
         id: "K",
         img: "./Kepek/luigiSapiR.jpg",
-        nev: "Super Luigi sapi"
+        nev: "Super Luigi sapi",
+        sale:false
     },
     {
         ar: "20",
         id: "K",
         img: "./Kepek/noiSportTaskaR.jpg",
-        nev: "Női sport táska"
+        nev: "Női sport táska",
+        sale:false
     },
     {
         ar: "15",
         id: "K",
         img: "./Kepek/zeldaNyaklancR.jpg",
-        nev: "The Legend of Zelda nyaklánc"
+        nev: "The Legend of Zelda nyaklánc",
+        sale:false
     },
     {
         ar: "35",
         id: "K",
         img: "./Kepek/baseballSapkaR.jpg",
-        nev: "Baseball sapka"
+        nev: "Baseball sapka",
+        sale:false
     },
     {
         ar: "24",
         id: "K",
         img: "./Kepek/szepSapkaR.jpg",
-        nev: "Nyári sapka"
+        nev: "Nyári sapka",
+        sale:false
 
     }
 
@@ -402,6 +462,7 @@ function KartyaLetrehozas(szurtRuhaBe, betoltott){
                 kartyaTermeknev.classList.add("title")
                 kartyaAr = document.createElement("div")
                 kartyaAr.classList.add("price")
+                saleAr=document.createElement("div")
     
     
                 buttonsIcons.appendChild(icon1)
@@ -413,6 +474,7 @@ function KartyaLetrehozas(szurtRuhaBe, betoltott){
                 kartyaKeptarolo.appendChild(kartyaKepOverlay)
                 kartyaDetails.appendChild(kartyaTermeknev)
                 kartyaDetails.appendChild(kartyaAr)
+                kartyaDetails.appendChild(saleAr)
                 ujKartya.appendChild(kartyaKeptarolo)
                 ujKartya.appendChild(kartyaDetails)
                 document.getElementsByClassName("kartyaksor")[0].appendChild(ujKartya)
@@ -487,6 +549,10 @@ function RendezSorrend(valaszottoldal, irany) {
         let titleK = document.querySelectorAll('.title')[j];
         titleK.textContent = "";
         titleK.innerHTML = szurtRuhak[i].nev;
+        if(tomb[i].sale==true)
+            {
+              termAr.innerHTML="<del>"+"$" + szurtRuhak[i].ar+"</del>";
+            }
         let termekSzam=document.querySelectorAll('.termekSzam')[0];
         termekSzam.innerHTML=szurtRuhak.length;
         j++;
