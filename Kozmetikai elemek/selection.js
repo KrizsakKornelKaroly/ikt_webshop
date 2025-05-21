@@ -551,7 +551,7 @@ function RendezSorrend(valaszottoldal, irany) {
         titleK.innerHTML = szurtRuhak[i].nev;
         if(tomb[i].sale==true)
             {
-              termAr.innerHTML="<del>"+"$" + szurtRuhak[i].ar+"</del>";
+              termAr.innerHTML="<del style='color:gray'>"+"$" + szurtRuhak[i].ar+"</del>"+" $"+szurtRuhak[i].ar/2;
             }
         let termekSzam=document.querySelectorAll('.termekSzam')[0];
         termekSzam.innerHTML=szurtRuhak.length;
