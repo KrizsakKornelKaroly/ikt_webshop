@@ -430,8 +430,10 @@ let tomb = [
 
 
 let betoltott = false;
+let filtered = false;
 window.onload = function () {
-    Atrendezes();
+    Filter();
+    Ertek();
 }
 
 function KartyaLetrehozas(szurtRuhaBe, betoltott){
@@ -483,7 +485,7 @@ function KartyaLetrehozas(szurtRuhaBe, betoltott){
 }
 
 //N, F, K, R, C
-function RendezSorrend(valaszottoldal, irany) {
+function RendezSorrend(valaszottoldal, irany, min, max) {
     let szuroFeltetel;
     let szurtRuhak = [];
     switch (valaszottoldal) {
@@ -507,16 +509,16 @@ function RendezSorrend(valaszottoldal, irany) {
             break;
     }
     for (let i = 0; i < tomb.length; i++) {
-        if (tomb[i].id == szuroFeltetel) {
+        if (tomb[i].id == szuroFeltetel && tomb[i].ar >= min && tomb[i].ar <= max) {
             szurtRuhak.push(tomb[i]);
         }
     }
 
     if (!betoltott) {
+        document.getElementsByClassName("kartyaksor")[0].innerHTML = ""
         KartyaLetrehozas(szurtRuhak, true)
         betoltott = true
     }
-    
 
     switch (irany) {
         case "nov":
@@ -561,22 +563,25 @@ function RendezSorrend(valaszottoldal, irany) {
 }
 
 function Atrendezes() {
+    let minAr = document.getElementById("rangeMin").value
+    let maxAr = document.getElementById("rangeMax").value
+
     let sortErtek = document.getElementById("sortdropdown").value;
     switch (sortErtek) {
         case "decrease":
-            RendezSorrend(document.title, "csok")
+            RendezSorrend(document.title, "csok", minAr, maxAr)
             break;
         case "increase":
-            RendezSorrend(document.title, "nov")
+            RendezSorrend(document.title, "nov", minAr, maxAr)
             break
         case "alap":
-            RendezSorrend(document.title, "alap")
+            RendezSorrend(document.title, "alap", minAr, maxAr)
             break;
         case "abcIncrease":
-            RendezSorrend(document.title, "abcSor")
+            RendezSorrend(document.title, "abcSor", minAr, maxAr)
             break;
         case "abcReverse":
-            RendezSorrend(document.title, "abcRev")
+            RendezSorrend(document.title, "abcRev", minAr, maxAr)
             break;
         default:
             alert("Hiba történt a szűrés közben!")
@@ -601,4 +606,17 @@ function TopTermekek() {
 TopTermekek();
 
 
+function Filter(){
+    betoltott = false
+    Atrendezes()
+}
 
+function Ertek(){
+    let minErtek = document.getElementById("rangeMin").value
+    let maxErtek = document.getElementById("rangeMax").value
+
+    alert(`${minErtek} - ${maxErtek}`)
+
+    let rangeErtekKiiras = document.getElementById("priceRangeP")
+    rangeErtekKiiras.textContent = `Price: $${minErtek} - $${maxErtek}`
+}

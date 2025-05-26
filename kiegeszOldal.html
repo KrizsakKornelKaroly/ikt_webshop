@@ -278,6 +278,17 @@
             width: 20px;
             margin-right: 30px;
         }
+        .filterButton{
+            border: none; 
+            width:80px;
+            height:30px; 
+            background-color:#dcdcdc;
+        }
+        .filterButton:hover{
+            cursor: pointer;
+            background-color: darkgray;
+            color: white;
+        }
 
         @media screen and (max-width:900px) {
             .card {
@@ -422,12 +433,12 @@
             <div class="slider-container" style="margin-top:20px;width: 100%;">
                 <div class="slider-track"></div>
                 <div class="slider-range" id="range"></div>
-                <input type="range" id="rangeMin" min="0" max="100" value="25">
-                <input type="range" id="rangeMax" min="0" max="100" value="75">
+                <input type="range" id="rangeMin" min="1" max="500" value="1" onchange="Ertek()">
+                <input type="range" id="rangeMax" min="1" max="500" value="500" onchange="Ertek()">
             </div>
             <div id="slideradatok" style="width: 100%">
-                <button style="border: none; width:80px;height:30px; background-color:#dcdcdc">FILTER</button>
-                <p>Price:$17-$100</p>
+                <button class="filterButton" onclick="Filter()">FILTER</button>
+                <p id="priceRangeP">Price: $1 - $500</p>
             </div>
             <h3>Product categories</h3>
             <div class="elvalaszto"></div>
