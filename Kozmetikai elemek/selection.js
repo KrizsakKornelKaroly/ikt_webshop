@@ -615,8 +615,6 @@ function Ertek(){
     let minErtek = document.getElementById("rangeMin").value
     let maxErtek = document.getElementById("rangeMax").value
 
-    alert(`${minErtek} - ${maxErtek}`)
-
     let rangeErtekKiiras = document.getElementById("priceRangeP")
     rangeErtekKiiras.textContent = `Price: $${minErtek} - $${maxErtek}`
 }
